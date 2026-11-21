@@ -8,6 +8,12 @@
   const SHELVES = ['Foundations','History','Places','Realms','Peoples','Magic','People & NPCs','Campaign','Mysteries'];
   const SYMBOLS = {'Foundations':'✧','History':'◷','Places':'◇','Realms':'♜','Peoples':'◌','Magic':'✦','People & NPCs':'♟','Campaign':'⚔','Mysteries':'◎'};
   let base = null;
+  let sourceIndex = null;
+  const sourceCache = new Map();
+  let sourceDeepIndexed = false;
+  let sourceDeepIndexing = false;
+  let sourceSearchQuery = '';
+  let sourceFilterGroup = '';
   let edits = readStore(STORAGE_KEY, {});
   let revisionHistory = readStore(HISTORY_KEY, []);
   let libraryFilters = {q:'',category:'',status:'',era:''};
@@ -62,6 +68,7 @@
     const m=base.meta;
     return `<section class="hero"><div class="hero-art"></div><div class="hero-content"><div class="eyebrow">THE WORLD ENDURES · THE ARCHIVE REMEMBERS</div><h1 class="display-title">A world of <em>stone,</em><br>starlight &amp; stories.</h1><p class="lede">The canonical living encyclopedia of Eryndor. Five Ages, independent civilizations, lost magic—and a Khazari dwarf whose next choice remains unwritten.</p><div class="hero-buttons"><a class="btn btn-primary" href="#library">Explore the World Bible <span>↗</span></a><a class="btn btn-quiet" href="#campaign">Resume the campaign log</a></div></div></section>
       <div class="stats-grid"><div class="stat-card"><div class="stat-number">5</div><div class="stat-label">World Ages</div></div><div class="stat-card"><div class="stat-number">5</div><div class="stat-label">Continents</div></div><div class="stat-card"><div class="stat-number">${allRecords().length}</div><div class="stat-label">Indexed Records</div></div><div class="stat-card"><div class="stat-number">2.0628B</div><div class="stat-label">Modeled Residents</div></div></div>
+      <div class="card-panel archive-banner"><div><div class="eyebrow">THE COMPLETE SOURCE ARCHIVE</div><h2 class="minor-title">54 original World Bible and Compendium volumes</h2><p>Browse the complete preserved chapters, older and newer, with no abbreviated replacements.</p></div><a class="btn btn-primary" href="#sources">Read all volumes ↗</a></div>
       ${sectionHead('From the World Bible','#library')}
       <div class="record-grid">${highlighted.map(recordCard).join('')}</div>
       ${sectionHead('The world at a glance')}
@@ -99,6 +106,116 @@
     document.getElementById('searchResultCount').textContent=`${filtered.length} of ${allRecords().length} records`;
     document.querySelectorAll('#categoryChips .chip').forEach(e=>e.classList.toggle('active',(e.dataset.cat||'')===libraryFilters.category));
   }
+
+  function archiveRows(){
+    if(!sourceIndex?.items?.length) return '<div class="empty">The source archive index is not available.</div>';
+    const search=sourceSearchQuery.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+    const items=sourceIndex.items.filter(item=>{
+      if(sourceFilterGroup && item.group!==sourceFilterGroup)return false;
+      const document=sourceCache.get(item.id);
+      const content=sourceDeepIndexed ? (document?.rawNotionMarkup||'') : '';
+      const haystack=[item.title,item.group,content].join(' ').toLocaleLowerCase();
+      return search.every(word=>haystack.includes(word));
+    });
+    const groups=[...new Set(items.map(item=>item.group))];
+    return '<div class="source-count">'+items.length+' of '+sourceIndex.items.length+' original source volumes</div>'+
+      (items.length?groups.map(group=>'<section class="source-group"><h2 class="minor-title">'+esc(group)+'</h2><div class="source-list">'+
+        items.filter(item=>item.group===group).map(item=>'<a class="source-link" href="#source/'+encodeURIComponent(item.id)+'"><span><strong>'+esc(item.title)+'</strong><small>Unabridged chapter · '+Math.round(item.bytes/1024).toLocaleString('en-CA')+' KB</small></span><span class="card-arrow">↗</span></a>').join('')+
+        '</div></section>').join(''):'<div class="empty">No sources matched. Try another search.</div>');
+  }
+  function renderSourceArchive(){
+    const groupNames=[...new Set(sourceIndex?.items?.map(x=>x.group)||[])];
+    return heading('ORIGINAL WORLD LIBRARY','The Unabridged Archive',
+      'Every accessible World Bible, Compendium, atlas, census and Second Age source volume is preserved here in full. Older accounts remain visible, including superseded details and unresolved contradictions.')
+      +'<div class="card-panel source-toolbar"><div class="eyebrow">SOURCE PRESERVATION · '+(sourceIndex?.items?.length||'—')+' VOLUMES</div>'+
+      '<p>This archive is the original historical record, not an automatic declaration that every old statement is current canon. The 149-entry encyclopedia tracks the reconciled working version. Full text and exact original markup are available in each volume.</p>'+
+      '<div class="source-controls"><input id="sourceSearch" class="input" type="search" placeholder="Find a chapter, name or event…" aria-label="Search source archive" value="'+esc(sourceSearchQuery)+'"/>'+
+      '<select id="sourceGroupFilter" class="select" aria-label="Filter archive collection"><option value="">Every collection</option>'+groupNames.map(g=>'<option value="'+esc(g)+'" '+(g===sourceFilterGroup?'selected':'')+'>'+esc(g)+'</option>').join('')+'</select></div>'+
+      '<button class="btn btn-quiet" type="button" id="deepArchiveSearch">'+(sourceDeepIndexed?'Full-text search ready':'Enable search inside every source chapter')+'</button><p class="text-small" id="sourceIndexStatus">'+(sourceDeepIndexed?'All '+sourceIndex.items.length+' volumes indexed for full-text search.':'Search covers chapter titles and collections until full-text search is enabled.')+'</p></div>'+
+      '<div id="sourceRows">'+archiveRows()+'</div>';
+  }
+  function updateSourceArchive(){
+    const el=document.getElementById('sourceRows');if(el)el.innerHTML=archiveRows();
+  }
+  function renderSourceDetail(id){
+    const item=sourceIndex?.items?.find(x=>x.id===id);
+    if(!item)return heading('SOURCE NOT FOUND','No matching source volume','The requested original chapter is not in the archive.')+'<a class="btn" href="#sources">Return to complete archive</a>';
+    return '<div class="breadcrumbs"><a href="#sources">COMPLETE SOURCE ARCHIVE</a> <span>›</span> '+esc(item.group)+'</div>'+
+    '<div class="record-head"><div class="eyebrow">UNABRIDGED PRESERVED TEXT</div><h1 class="page-title">'+esc(item.title)+'</h1>'+
+    '<p class="record-summary">Original chapter preserved in full, including historical revisions and material that may have been superseded by later canon.</p>'+
+    '<div class="meta-strip"><span class="status status-working">Source record · check current canon</span><span>'+Math.round(item.bytes/1024)+' KB source file</span></div></div>'+
+    '<div class="source-toolbar source-view-tools"><button class="btn btn-small" type="button" data-source-format="readable">Readable view</button> <button class="btn btn-small btn-quiet" type="button" data-source-format="exact">Exact source text</button>'+
+    ' <a class="btn btn-small btn-quiet" href="./'+esc(item.path)+'" download>Download original JSON</a></div>'+
+    '<div id="sourceBody" class="article-text source-article"><p>Opening the complete source chapter…</p></div>'+
+    '<div class="notice">This is an intact source copy. Older versions may contradict newer decisions. For the reconciled working reference use <a href="#library">the encyclopedia</a>; open mysteries remain genuinely undecided.</div>';
+  }
+  function sourcePlainText(raw){
+    return String(raw||'')
+      .replace(/<callout\b[^>]*>/gi,'\n\n').replace(/<\/callout>/gi,'\n\n')
+      .replace(/<page\b[^>]*>/gi,'\n\n').replace(/<\/page>/gi,'\n\n')
+      .replace(/<mention\b[^>]*\/>/gi,' [linked reference] ')
+      .replace(/<\/(p|tr|li|table|ul|ol|div)>/gi,'\n')
+      .replace(/<\/(td|th)>/gi,' | ')
+      .replace(/<b>/gi,'**').replace(/<\/b>/gi,'**')
+      .replace(/<strong>/gi,'**').replace(/<\/strong>/gi,'**')
+      .replace(/<i>/gi,'*').replace(/<\/i>/gi,'*')
+      .replace(/<em>/gi,'*').replace(/<\/em>/gi,'*')
+      .replace(/<br\s*\/?>/gi,'\n')
+      .replace(/<[^>]*>/g,'')
+      .replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'")
+      .replace(/\n{4,}/g,'\n\n\n').trim();
+  }
+  function showSourceFormat(id,format){
+    const el=document.getElementById('sourceBody'),obj=sourceCache.get(id);
+    if(!el||!obj||!location.hash.startsWith('#source/'+id))return;
+    el.innerHTML=format==='exact'?'<pre class="source-exact">'+esc(obj.rawNotionMarkup)+'</pre>':detailText(sourcePlainText(obj.rawNotionMarkup));
+    el.dataset.sourceFormat=format;
+    document.querySelectorAll('[data-source-format]').forEach(x=>x.classList.toggle('active',x.dataset.sourceFormat===format));
+  }
+  async function loadSourceDetail(id){
+    const item=sourceIndex?.items?.find(x=>x.id===id);
+    if(!item)return;
+    try {
+      if(!sourceCache.has(id)){
+        const response=await fetch('./'+item.path,{cache:'no-cache'});
+        if(!response.ok)throw new Error('HTTP '+response.status);
+        const payload=await response.json();
+        if(payload.id!==id||typeof payload.rawNotionMarkup!=='string')throw new Error('Invalid original chapter');
+        sourceCache.set(id,payload);
+      }
+      showSourceFormat(id,'readable');
+    }catch(error){
+      const el=document.getElementById('sourceBody');
+      if(el&&location.hash==='#source/'+id)el.innerHTML='<p class="empty">Unable to open the original text: '+esc(error.message)+'</p>';
+    }
+  }
+  async function indexFullSourceArchive(){
+    if(sourceDeepIndexing||!sourceIndex)return;
+    sourceDeepIndexing=true;
+    const items=sourceIndex.items.filter(item=>!sourceCache.has(item.id));
+    let problems=0;
+    for(let i=0;i<items.length;i+=6){
+      const batch=items.slice(i,i+6);
+      const results=await Promise.allSettled(batch.map(async item=>{
+        const response=await fetch('./'+item.path);
+        if(!response.ok)throw new Error('HTTP '+response.status);
+        const payload=await response.json();
+        if(payload.id!==item.id||typeof payload.rawNotionMarkup!=='string')throw new Error('Source mismatch');
+        sourceCache.set(item.id,payload);
+      }));
+      problems+=results.filter(x=>x.status==='rejected').length;
+      const el=document.getElementById('sourceIndexStatus');
+      if(el)el.textContent='Indexed '+sourceCache.size+' of '+sourceIndex.items.length+' original volumes…';
+    }
+    sourceDeepIndexed=sourceIndex.items.every(x=>sourceCache.has(x.id));
+    sourceDeepIndexing=false;
+    const status=document.getElementById('sourceIndexStatus');
+    if(status)status.textContent=sourceDeepIndexed?'Full-text search ready across every one of the '+sourceIndex.items.length+' volumes.':'Indexed '+sourceCache.size+' volumes; '+problems+' could not load. Tap the button to retry.';
+    const btn=document.getElementById('deepArchiveSearch');
+    if(btn)btn.textContent=sourceDeepIndexed?'Full-text search ready':'Retry remaining source chapters';
+    updateSourceArchive();
+  }
+
   function renderHistory() {
     const ages=base.meta.ages;
     const selected=['first-great-cataclysm','era-of-awakening','era-of-wonder','era-of-fire','end-of-second-age-global-earthquakes','creation-of-the-orcs'].map(byId).filter(Boolean);
@@ -187,7 +304,7 @@
   }
   function updateNav(route) {
     document.querySelectorAll('[data-route]').forEach(a=>a.classList.toggle('active',a.dataset.route===route));
-    const labels={home:'THE GREAT ARCHIVE',library:'ENCYCLOPEDIA',history:'THE BOOK OF AGES',world:'THE WORLD ATLAS',campaign:'GLOIN HAMMERFELD',continuity:'CANON & CONTINUITY',drafts:'THE SCRIBE’S DESK',record:'COMPENDIUM ENTRY'};
+    const labels={home:'THE GREAT ARCHIVE',library:'ENCYCLOPEDIA',history:'THE BOOK OF AGES',world:'THE WORLD ATLAS',campaign:'GLOIN HAMMERFELD',continuity:'CANON & CONTINUITY',drafts:'THE SCRIBE’S DESK',sources:'THE COMPLETE SOURCE ARCHIVE',source:'ORIGINAL VOLUME',record:'COMPENDIUM ENTRY'};
     document.getElementById('locationLabel').textContent=labels[route]||'THE GREAT ARCHIVE';
     document.getElementById('navCount').textContent=allRecords().length;
     document.getElementById('draftCount').textContent=Object.keys(edits).length||'';
@@ -198,16 +315,18 @@
   function route() {
     if(!base)return;
     const hash=decodeURI(location.hash.slice(1)||'home');
-    const routeName=hash.startsWith('record/')?'record':hash.split('?')[0]||'home';
+    const routeName=hash.startsWith('record/')?'record':hash.startsWith('source/')?'source':hash.split('?')[0]||'home';
     if(routeName==='library'&&hash.includes('?')){
       const query=new URLSearchParams(hash.split('?').slice(1).join('?'));
       libraryFilters.category=query.get('category')||'';
     }
     updateNav(routeName);
-    const routes={home:renderOverview,library:renderLibrary,history:renderHistory,world:renderWorld,campaign:renderCampaign,continuity:renderContinuity,drafts:renderDraftDesk};
+    const routes={home:renderOverview,library:renderLibrary,history:renderHistory,world:renderWorld,campaign:renderCampaign,continuity:renderContinuity,drafts:renderDraftDesk,sources:renderSourceArchive};
     if(routeName==='record')root.innerHTML=renderRecord(hash.slice(7));
+    else if(routeName==='source'){const id=hash.slice(7);root.innerHTML=renderSourceDetail(id);void loadSourceDetail(id);}
     else root.innerHTML=(routes[routeName]||renderOverview)();
     if(routeName==='library')refreshLibrary();
+    if(routeName==='sources')updateSourceArchive();
     document.title=`${routeName==='record'?(byId(hash.slice(7))?.title||'Record'):routeName[0].toUpperCase()+routeName.slice(1)} · Eryndor`;
     closeMobile();
     window.scrollTo({top:0,behavior:'instant'});
@@ -262,6 +381,8 @@
     }catch(err){showToast('Import failed: '+err.message)}
   }
   document.addEventListener('click', e=>{
+    const format=e.target.closest('[data-source-format]');if(format){showSourceFormat(location.hash.slice(8),format.dataset.sourceFormat);return;}
+    if(e.target.closest('#deepArchiveSearch')){void indexFullSourceArchive();return;}
     const edit=e.target.closest('[data-edit-id]');if(edit){e.preventDefault();startEdit(edit.dataset.editId);return;}
     const copy=e.target.closest('[data-share-id]');if(copy){e.preventDefault();const link=location.origin+location.pathname+hrefRecord(copy.dataset.shareId);if(navigator.clipboard?.writeText)navigator.clipboard.writeText(link).then(()=>showToast('Record link copied')).catch(()=>showToast('Copy the address from the browser.'));else showToast('Copy the address from the browser.');return;}
     if(e.target.closest('#exportData')||e.target.closest('#exportData2')){e.preventDefault();exportFull();return;}
@@ -270,9 +391,11 @@
     const cat=e.target.closest('[data-cat]');if(cat){libraryFilters.category=cat.dataset.cat;refreshLibrary();return;}
     if(e.target.closest('#clearFilters')){libraryFilters={q:'',category:'',status:'',era:''};route();return;}
   });
-  document.addEventListener('input',e=>{if(e.target.id==='librarySearch'){libraryFilters.q=e.target.value;refreshLibrary();}});
+  document.addEventListener('input',e=>{if(e.target.id==='librarySearch'){libraryFilters.q=e.target.value;refreshLibrary();}
+    if(e.target.id==='sourceSearch'){sourceSearchQuery=e.target.value;updateSourceArchive();}});
   document.addEventListener('change',e=>{
     if(e.target.id==='statusFilter'){libraryFilters.status=e.target.value;refreshLibrary();}
+    if(e.target.id==='sourceGroupFilter'){sourceFilterGroup=e.target.value;updateSourceArchive();}
     if(e.target.id==='eraFilter'){libraryFilters.era=e.target.value;refreshLibrary();}
     if(e.target.id==='importFile')importJSON(e.target.files?.[0]);
   });
@@ -285,7 +408,7 @@
   menuToggle.addEventListener('click',toggleMobile);mobileShade.addEventListener('click',closeMobile);
   window.addEventListener('hashchange',()=>{if(!location.hash.startsWith('#drafts'))selectedDraft=null;route()});
   fetch(DATA_URL,{cache:'no-cache'}).then(async response=>{if(!response.ok)throw new Error('HTTP '+response.status);return response.json()}).then(data=>{
-    if(!data?.records||!data?.meta)throw new Error('Invalid archive format');base=data;route();
+    if(!data?.records||!data?.meta)throw new Error('Invalid archive format');base=data;fetch('./data/source-index.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Source index HTTP '+r.status);return r.json()}).then(index=>{sourceIndex=index;route()}).catch(()=>route());
   }).catch(err=>{
     root.innerHTML=`<div class="eyebrow">ARCHIVE UNAVAILABLE</div><h1 class="page-title">Could not load the World Bible</h1><p class="page-description">${esc(err.message)}. This site needs to be served by GitHub Pages or a local web server. Opening index.html directly as a file may block JSON loading.</p><div class="notice">For local testing, from the website folder run <code>python3 -m http.server 8000</code> and open <code>http://localhost:8000</code>.</div>`;
   });
