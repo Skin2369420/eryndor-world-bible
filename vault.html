@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0d141c">
+  <meta name="description" content="The complete Eryndor World Bible source archive: 54 preserved historical documents, Compendiums, atlases and campaign chronicles.">
+  <title>Complete Source Vault · Eryndor</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./vault.css">
+  <script defer src="./vault.js"></script>
+</head>
+<body class="vault-body">
+  <header class="vault-top">
+    <a class="vault-brand" href="./index.html#home"><span class="vault-mark">◇</span><span>ERYNDOR <small>THE COMPLETE SOURCE VAULT</small></span></a>
+    <nav class="vault-links"><a href="./index.html#library">Encyclopedia</a><a href="./index.html#campaign">Gloin's Campaign</a><a class="vault-current" href="./vault.html">Full Archive</a></nav>
+  </header>
+  <main class="vault-wrap">
+    <section class="vault-hero">
+      <p class="vault-kicker">THE LIVING WORLD BIBLE · UNABRIDGED SOURCE MATERIAL</p>
+      <h1>Every chapter. <em>Every earlier version.</em></h1>
+      <p>The complete available Eryndor source documents are preserved here, not rewritten as summaries. Browse the original World Bible, the Compendiums, atlases, histories and campaign records. Earlier sources are retained for continuity checks; their inclusion does not revive superseded canon.</p>
+      <div class="vault-metrics"><div><strong id="vaultCount">54</strong><span>source documents</span></div><div><strong id="vaultSize">2.1 MB</strong><span>preserved material</span></div><div><strong>5</strong><span>source collections</span></div></div>
+      <div class="vault-warning">Source coverage: every Eryndor Notion page discoverable in the connected workspace at import time. Original dialogue not recorded in those pages, inaccessible image assets, and material in other services are not claimed to be recovered. The 149 curated encyclopedia entries remain separate.</div>
+    </section>
+    <div class="vault-grid">
+      <aside class="vault-sidebar">
+        <div class="vault-panel-heading">SOURCE COLLECTIONS</div>
+        <nav id="vaultGroups" class="vault-groups" aria-label="Filter source group"></nav>
+        <div class="vault-panel-heading vault-filter-title">FIND A CHAPTER</div>
+        <input class="vault-input" id="vaultSearch" type="search" autocomplete="off" placeholder="Title or subject…" aria-label="Filter source titles">
+        <div id="vaultResults" class="vault-results" aria-live="polite">Loading source index…</div>
+      </aside>
+      <section class="vault-main" id="vaultMain" tabindex="-1">
+        <div class="vault-loading">Opening the complete archive…</div>
+      </section>
+    </div>
+    <footer class="vault-footer">ERYNDOR · PUBLIC READ ACCESS · CANON CHANGES REQUIRE REPOSITORY PERMISSION <a href="./index.html#continuity">Continuity Ledger</a></footer>
+  </main>
+</body>
+</html>
