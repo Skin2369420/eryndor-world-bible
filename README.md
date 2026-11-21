@@ -1,6 +1,18 @@
-# Eryndor — The Living World Bible
+# Eryndor — The Living World Bible & Complete Source Vault
 
 A zero-dependency, phone-friendly GitHub Pages website for the Eryndor fantasy world. Public readers may browse and search; only the GitHub repository owner and any authorized collaborators can publish updates.
+
+
+## FULL SOURCE IMPORT — 2026-11-21
+
+**All 54 Eryndor source pages discoverable in the connected Notion workspace are archived in full**, totaling 2,118,797 bytes. They include the original World Bible, the original Compendium, Edition II and its chapter sources, Living Atlases, cultural chapters, population registers, the complete recovered Gloin chronicles and Second Age annals. **This is not a summary-only import.**
+
+- **Website reader:** [Complete Source Vault](./vault.html) — browse source collections, read the complete text, switch to exact original markup, or full-text-search all source pages.
+- **Full provenance checklist:** [SOURCE-INVENTORY.md](./SOURCE-INVENTORY.md) — all 54 page titles and direct GitHub source links.
+- **Canonical working index:** [data/world.json](./data/world.json) — 149 organized worldbuilding records plus links into the full archive.
+- **Source files:** [data/source-vault](./data/source-vault) — one unabridged recovered Notion source body per document; [source-vault-index.json](./data/source-vault-index.json) catalogues them.
+
+**Scope boundary:** Some original roleplay dialogue and attachments may never have been included in Notion; this archive cannot conjure those missing parts. Nor does copying older references automatically make outdated lore current canon. The recovered source bodies are preserved as historical evidence, and current canon is interpreted with explicit supersessions.
 
 ## Contents
 
