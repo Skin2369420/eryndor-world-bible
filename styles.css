@@ -24,3 +24,21 @@
 .article-text em{color:#e1dacd}
 .article-text ul,.article-text ol{max-width:75ch;padding-left:24px;line-height:1.85;margin:0 0 22px}
 .article-text li{margin-bottom:8px}
+
+/* Full original-source archive: every preserved page readable on any screen. */
+.archive-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:28px 0;padding:26px;border-color:#596345}
+.archive-banner .minor-title{margin:8px 0 5px}.archive-banner p{margin:6px 0}
+.source-toolbar{margin:22px 0;padding:22px}.source-toolbar p{max-width:80ch;line-height:1.65}
+.source-controls{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 12px}
+.source-controls .input{flex:2;min-width:220px}.source-controls .select{flex:1;min-width:190px}
+.source-count{margin:16px 0;color:var(--muted);font-size:13px}.source-group{margin:30px 0}
+.source-group .minor-title{font-size:20px;margin-bottom:12px}
+.source-list{border:1px solid #34444e;border-radius:11px;overflow:hidden;background:#111d26}
+.source-link{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;text-decoration:none;color:var(--text);border-bottom:1px solid #2c3d45}
+.source-link:last-child{border-bottom:0}.source-link:hover,.source-link:focus-visible{background:#1e3039}
+.source-link strong{display:block;font-weight:600;line-height:1.4}.source-link small{display:block;margin-top:6px;color:var(--muted);font-size:12px}
+.source-view-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.source-view-tools .btn.active{border-color:var(--gold2);background:#293b3a;color:var(--gold2)}
+.source-article{overflow-wrap:anywhere;max-width:920px;line-height:1.82;padding-bottom:24px}
+.source-article p{line-height:1.8}.source-article .source-exact{font-size:12px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;background:#0b151e;border:1px solid #314451;border-radius:9px;padding:18px}
+@media(max-width:700px){.archive-banner{flex-direction:column;align-items:flex-start;padding:20px}.archive-banner .btn{width:100%}.source-controls{flex-direction:column}.source-controls .input,.source-controls .select{width:100%}.source-toolbar{padding:16px}.source-article .source-exact{padding:10px;font-size:11px}}
