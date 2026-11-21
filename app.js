@@ -39,12 +39,22 @@
   function recordCard(r) { return `<a class="record-card" href="${hrefRecord(r.id)}"><div class="record-category">${esc(r.category)} ${r.localDraft?'· LOCAL DRAFT':''}</div><h3>${esc(r.title)}</h3><p>${esc(r.summary)}</p><div class="record-card-foot">${statusChip(r.status)}<span class="card-arrow">↗</span></div></a>`; }
   function heading(eyebrow,title,desc='',actions='') { return `<div class="intro-row"><div><div class="eyebrow">${eyebrow}</div><h1 class="page-title">${title}</h1>${desc?`<div class="page-description">${desc}</div>`:''}</div>${actions?`<div class="intro-actions">${actions}</div>`:''}</div>`; }
   function sectionHead(title,link='',desc=''){return `<div class="section-head"><h2 class="minor-title">${title}</h2>${link?`<a href="${link}">View collection ↗</a>`:desc?`<div class="section-note">${desc}</div>`:''}</div>`;}
+  function inlineMarkup(value='') {
+    return esc(value).replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*])\*([^*\n]+)\*/g,'$1<em>$2</em>');
+  }
   function detailText(body) {
     if (!body) return '<p>No details have been added yet.</p>';
-    return body.split(/\n\s*\n/).map(part => {
-      const lines=part.split('\n');
-      if(lines.length>1 && lines.every(l=>/^[-*] /.test(l))) return '<ul>'+lines.map(l=>`<li>${esc(l.slice(2))}</li>`).join('')+'</ul>';
-      return `<p>${lines.map(esc).join('<br>')}</p>`;
+    return String(body).replace(/\r/g,'').split(/\n\s*\n/).map(part => {
+      const lines=part.split('\n').map(s=>s.trim()).filter(Boolean);
+      if (!lines.length) return '';
+      if (lines.length===1 && /^#{1,4}\s+/.test(lines[0])) {
+        const m=lines[0].match(/^(#{1,4})\s+(.+)$/);
+        const level=Math.min(4,Math.max(2,m[1].length+1));
+        return '<h'+level+'>'+inlineMarkup(m[2])+'</h'+level+'>';
+      }
+      if (lines.every(line=>/^[-*]\s+/.test(line))) return '<ul>'+lines.map(line=>'<li>'+inlineMarkup(line.replace(/^[-*]\s+/,''))+'</li>').join('')+'</ul>';
+      if (lines.every(line=>/^\d+[.)]\s+/.test(line))) return '<ol>'+lines.map(line=>'<li>'+inlineMarkup(line.replace(/^\d+[.)]\s+/,''))+'</li>').join('')+'</ol>';
+      return '<p>'+lines.map(inlineMarkup).join('<br>')+'</p>';
     }).join('');
   }
   function renderOverview() {
