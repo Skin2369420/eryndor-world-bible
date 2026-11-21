@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Eryndor — Living World Bible",
-    "edition": "Founding GitHub Edition 1.1 · Second Age annals restored",
+    "edition": "Edition 2.0 · Complete 54-volume Source Vault",
     "compiled": "2026-11-21",
-    "notice": "Five continental Second Age annals have now been imported in fuller form from source Notion chronicles (creator-approved, revisable material). The rest of the World Bible is still a condensed, non-exhaustive import; reconciliation of original dialogues and other volumes remains open.",
+    "notice": "All 54 Eryndor source pages discovered in the connected Notion workspace have been imported in full into the Source Vault, including both Compendiums, original World Bible, atlases, second-age annals and campaign chronicle. The 149 curated encyclopedia records remain a separate summary/reference index. Older versions are archival, not automatically current canon. Uncaptured original chat dialogue and media attachments have not been reconstructed.",
     "worldStats": {
       "diameter": "50,000 km",
       "population": "2.0628B",
@@ -126,7 +126,15 @@
         "level": "protected",
         "detail": "No new dialogue or time passage without player."
       }
-    ]
+    ],
+    "sourceVault": {
+      "index": "./data/source-vault-index.json",
+      "documents": 54,
+      "preservedBytes": 2118797,
+      "scope": "All discovered Eryndor Notion pages",
+      "contentPolicy": "Unabridged source bodies; keep legacy sources separate from current canon",
+      "completenessNote": "Original source chat and missing multimedia are not guaranteed present."
+    }
   },
   "records": [
     {
