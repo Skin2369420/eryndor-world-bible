@@ -134,6 +134,12 @@
       "scope": "All discovered Eryndor Notion pages",
       "contentPolicy": "Unabridged source bodies; keep legacy sources separate from current canon",
       "completenessNote": "Original source chat and missing multimedia are not guaranteed present."
+    },
+    "campaignReset": {
+      "date": "2026-11-21",
+      "scope": "All Gloin gameplay and its consequences retired from canon; setting, characters, locations, First Throne, Silence Below and eastern mine preserved",
+      "status": "reset awaiting new start",
+      "archivePolicy": "Keep historical source texts unaltered, explicitly noncanonical as gameplay"
     }
   },
   "records": [
@@ -1931,8 +1937,8 @@
       "id": "gloin-hammerfeld",
       "category": "People & NPCs",
       "title": "Gloin Hammerfeld",
-      "summary": "Khazari; age 42; common-born protagonist from Karak-Varn.",
-      "body": "Khazari; age 42; common-born protagonist from Karak-Varn. Apprentice runesmith in training, civilian combat and engineering student; not enlisted in the army. Ancestry fully undecided even to the storyteller.",
+      "summary": "Khazari dwarf, age 42, from Karak-Varn; retained character with a fresh, unplayed campaign.",
+      "body": "Gloin Hammerfeld is an established Khazari character, age 42, associated with Karak-Varn. His identity and family/world background remain available, subject to any unresolved character-roster discrepancies. His previous Day 19–22 gameplay is erased from active continuity: no previous apprenticeship, military enlistment, combat training, engineering lessons, mine investigation, rune progress, purchases, discoveries, inventory, purse or campaign pause is established. Future gameplay begins afresh. His ancestry and any possible connection to the First Throne are genuinely undecided; no hidden answer or chosen-one status exists.",
       "status": "canon",
       "era": "Fifth Age",
       "region": "Karak-Varn",
@@ -2373,15 +2379,17 @@
       "id": "current-campaign-pause",
       "category": "Campaign",
       "title": "Current Campaign Pause",
-      "summary": "Autumn Day 22, Year 3847, ~11:25 AM at Hadrik’s desk.",
-      "body": "The campaign is paused precisely at the Royal Historical Archive in Karak-Varn. Gloin Hammerfeld and Maela Deepforge stand at Hadrik Ironvein's desk, where he has asked what they uncovered. Gloin has not answered.\n\nGloin is 42, healthy, and has 10 silver crowns and 82 copper coins. Equipment: worn boots, clothes, personal axe, family keepsake of unknown significance, borrowed Foundations of First Throne Script, notebook and survey sketches. Borin holds the original survey.\n\nActive practices: three First Throne runes (Hold, Within, Until Command); recognizes additional symbols without mastering them. Maela apprenticeship twice weekly if schedules allow; Keldrun civilian combat course three times weekly (next planned Day 23 morning); Bruni metallurgy lesson Day 23 at 11:30 AM. Elska's research is agreed but has not yet begun. No additional events occur before the player resumes.",
-      "status": "canon",
+      "summary": "[RETIRED CAMPAIGN — NOT CANON] Autumn Day 22, Year 3847, ~11:25 AM at Hadrik’s desk.",
+      "body": "RETIRED GAMEPLAY RECORD. The creator reset Gloin's campaign on 2026-11-21. The following is archival text only, not an event that happened in the current Eryndor timeline. No discoveries, NPC disclosures, player choices, injuries, training, financial transactions or quest states from this record carry forward.\n\nThe campaign is paused precisely at the Royal Historical Archive in Karak-Varn. Gloin Hammerfeld and Maela Deepforge stand at Hadrik Ironvein's desk, where he has asked what they uncovered. Gloin has not answered.\n\nGloin is 42, healthy, and has 10 silver crowns and 82 copper coins. Equipment: worn boots, clothes, personal axe, family keepsake of unknown significance, borrowed Foundations of First Throne Script, notebook and survey sketches. Borin holds the original survey.\n\nActive practices: three First Throne runes (Hold, Within, Until Command); recognizes additional symbols without mastering them. Maela apprenticeship twice weekly if schedules allow; Keldrun civilian combat course three times weekly (next planned Day 23 morning); Bruni metallurgy lesson Day 23 at 11:30 AM. Elska's research is agreed but has not yet begun. No additional events occur before the player resumes.",
+      "status": "non-canon",
       "era": "Fifth Age",
       "region": "Karak-Varn",
       "tags": [
         "bookmark",
         "state",
-        "gloin"
+        "gloin",
+        "retired campaign",
+        "non-canon"
       ],
       "related": [
         "gloin-hammerfeld",
@@ -2394,14 +2402,16 @@
       "id": "autumn-day-19-opening-and-borin",
       "category": "Campaign",
       "title": "Autumn Day 19 — Opening and Borin",
-      "summary": "Gloin woke on an outdoor bench, considered jobs, and pursued Borin’s mine warning.",
-      "body": "The first verified scene opens at 7:20 AM, Autumn Day 19. Gloin, age 42, woke on a back-alley bench in Karak-Varn's Lower Eastern Quarter, not in the old superseded rented-room story.\n\nA job board offered a mine expedition, merchant caravan and three-year Royal Army service. He considered enlisting but first followed Borin. Borin disclosed a closed mine, hidden chamber, three missing engineers and a preserved original survey. Gloin saw three survey sheets describing nine levels versus six on public maps. He hid and overheard Edrik Voss's alleged breach account. By morning he sought Hadrik's historical expertise; later he discussed runesmithing with Maela. No enlistment occurred.",
-      "status": "canon",
+      "summary": "[RETIRED CAMPAIGN — NOT CANON] Gloin woke on an outdoor bench, considered jobs, and pursued Borin’s mine warning.",
+      "body": "RETIRED GAMEPLAY RECORD. The creator reset Gloin's campaign on 2026-11-21. The following is archival text only, not an event that happened in the current Eryndor timeline. No discoveries, NPC disclosures, player choices, injuries, training, financial transactions or quest states from this record carry forward.\n\nThe first verified scene opens at 7:20 AM, Autumn Day 19. Gloin, age 42, woke on a back-alley bench in Karak-Varn's Lower Eastern Quarter, not in the old superseded rented-room story.\n\nA job board offered a mine expedition, merchant caravan and three-year Royal Army service. He considered enlisting but first followed Borin. Borin disclosed a closed mine, hidden chamber, three missing engineers and a preserved original survey. Gloin saw three survey sheets describing nine levels versus six on public maps. He hid and overheard Edrik Voss's alleged breach account. By morning he sought Hadrik's historical expertise; later he discussed runesmithing with Maela. No enlistment occurred.",
+      "status": "non-canon",
       "era": "Fifth Age",
       "region": "Karak-Varn",
       "tags": [
         "chronicle",
-        "day 19"
+        "day 19",
+        "retired campaign",
+        "non-canon"
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
@@ -2411,14 +2421,16 @@
       "id": "autumn-day-20-quarry-and-research",
       "category": "Campaign",
       "title": "Autumn Day 20 — Quarry and Research",
-      "summary": "Borin taught practical engineering at Old Quarry Access, followed by study and training.",
-      "body": "Gloin met Borin at Old Quarry Access around 7 AM for underground structural instruction. They inspected ceiling fractures, damp, supports and wood timbers, then a repositioned survey marker bearing possible older First Throne geometry. This was NOT the sealed eastern mine. Breakfast followed.\n\nIn afternoon/evening Gloin consulted Hadrik and Maela, studied a dozen symbols (recognition, not mastery), practiced introductory axe control and pursued separate evidence. Some transaction times and original dialogue remain unrecovered.",
-      "status": "canon",
+      "summary": "[RETIRED CAMPAIGN — NOT CANON] Borin taught practical engineering at Old Quarry Access, followed by study and training.",
+      "body": "RETIRED GAMEPLAY RECORD. The creator reset Gloin's campaign on 2026-11-21. The following is archival text only, not an event that happened in the current Eryndor timeline. No discoveries, NPC disclosures, player choices, injuries, training, financial transactions or quest states from this record carry forward.\n\nGloin met Borin at Old Quarry Access around 7 AM for underground structural instruction. They inspected ceiling fractures, damp, supports and wood timbers, then a repositioned survey marker bearing possible older First Throne geometry. This was NOT the sealed eastern mine. Breakfast followed.\n\nIn afternoon/evening Gloin consulted Hadrik and Maela, studied a dozen symbols (recognition, not mastery), practiced introductory axe control and pursued separate evidence. Some transaction times and original dialogue remain unrecovered.",
+      "status": "non-canon",
       "era": "Fifth Age",
       "region": "Karak-Varn",
       "tags": [
         "chronicle",
-        "day 20"
+        "day 20",
+        "retired campaign",
+        "non-canon"
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
@@ -2428,14 +2440,16 @@
       "id": "autumn-day-21-family-supper",
       "category": "Campaign",
       "title": "Autumn Day 21 — Family Supper",
-      "summary": "Family disclosures, eight-silver meal, metallurgy and discreet magical research commitments.",
-      "body": "Gloin held a large family supper with Durgan, Mara, Bruni, Tovin, Elska, Rurik, Harn and Vessa. He disclosed the eastern mine's survey differences, missing engineers, First Throne clues, political reports and his uncertainties.\n\nThe supper cost 8 silver; the latest confirmed post-supper purse is 10 silver 82 copper, though an earlier sum has an 11-copper unexplained discrepancy. Bruni agreed to a Day 23 metallurgy lesson and Elska to discreet historical Common Magic research. Family knowledge comes from this direct disclosure; outsiders do not automatically learn it.",
-      "status": "canon",
+      "summary": "[RETIRED CAMPAIGN — NOT CANON] Family disclosures, eight-silver meal, metallurgy and discreet magical research commitments.",
+      "body": "RETIRED GAMEPLAY RECORD. The creator reset Gloin's campaign on 2026-11-21. The following is archival text only, not an event that happened in the current Eryndor timeline. No discoveries, NPC disclosures, player choices, injuries, training, financial transactions or quest states from this record carry forward.\n\nGloin held a large family supper with Durgan, Mara, Bruni, Tovin, Elska, Rurik, Harn and Vessa. He disclosed the eastern mine's survey differences, missing engineers, First Throne clues, political reports and his uncertainties.\n\nThe supper cost 8 silver; the latest confirmed post-supper purse is 10 silver 82 copper, though an earlier sum has an 11-copper unexplained discrepancy. Bruni agreed to a Day 23 metallurgy lesson and Elska to discreet historical Common Magic research. Family knowledge comes from this direct disclosure; outsiders do not automatically learn it.",
+      "status": "non-canon",
       "era": "Fifth Age",
       "region": "Karak-Varn",
       "tags": [
         "chronicle",
-        "day 21"
+        "day 21",
+        "retired campaign",
+        "non-canon"
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
@@ -2445,14 +2459,16 @@
       "id": "autumn-day-22-mine-inspection",
       "category": "Campaign",
       "title": "Autumn Day 22 — Mine Inspection",
-      "summary": "Non-invasive structural and resonance investigation; sealed door remained closed.",
-      "body": "Gloin woke at 4:30 AM and reached the eastern mine at approximately 5:52 AM. Maela, Rennik, Feldin and Orsa examined accessible passages and records, not the sealed chamber. The previously planned attendance included Edrik and Captain Vale but the difference remains unexplained.\n\nUnusual vibration was strongest near a replacement drainage stone, recurrent about every 19–21 seconds; other western wall features and maintenance records needed follow-up. The team did not prove any entity, deliberate breach or global conspiracy. Maela and Gloin later compared stone samples. Finally they reached Hadrik's Royal Historical Archive desk at about 11:25 AM. The scene pauses before Gloin's reply.",
-      "status": "canon",
+      "summary": "[RETIRED CAMPAIGN — NOT CANON] Non-invasive structural and resonance investigation; sealed door remained closed.",
+      "body": "RETIRED GAMEPLAY RECORD. The creator reset Gloin's campaign on 2026-11-21. The following is archival text only, not an event that happened in the current Eryndor timeline. No discoveries, NPC disclosures, player choices, injuries, training, financial transactions or quest states from this record carry forward.\n\nGloin woke at 4:30 AM and reached the eastern mine at approximately 5:52 AM. Maela, Rennik, Feldin and Orsa examined accessible passages and records, not the sealed chamber. The previously planned attendance included Edrik and Captain Vale but the difference remains unexplained.\n\nUnusual vibration was strongest near a replacement drainage stone, recurrent about every 19–21 seconds; other western wall features and maintenance records needed follow-up. The team did not prove any entity, deliberate breach or global conspiracy. Maela and Gloin later compared stone samples. Finally they reached Hadrik's Royal Historical Archive desk at about 11:25 AM. The scene pauses before Gloin's reply.",
+      "status": "non-canon",
       "era": "Fifth Age",
       "region": "Karak-Varn",
       "tags": [
         "chronicle",
-        "day 22"
+        "day 22",
+        "retired campaign",
+        "non-canon"
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
@@ -2463,7 +2479,7 @@
       "category": "Campaign",
       "title": "Currency and Practical Economy",
       "summary": "100 copper = 1 silver; 100 silver = 1 gold; 100 gold = 1 platinum.",
-      "body": "The standard four-coin accounting system uses copper, silver crowns, gold crowns and platinum crowns, at 100:1 steps. A common bed is 2 copper, basic room 5, comfortable room 8, quality inn 1 silver; breakfast 2–5 copper, hearty meal 4–6 copper, small ale 2 copper, honey brew 3 copper. Local conditions, supply, war, materials and bargaining affect prices.\n\nGloin's recorded purse must change only when actual transactions occur. Do not invent costs or silently alter the ledger.",
+      "body": "The standard four-coin accounting system uses copper, silver crowns, gold crowns and platinum crowns, at 100:1 steps. A common bed is 2 copper, basic room 5, comfortable room 8, quality inn 1 silver; breakfast 2–5 copper, hearty meal 4–6 copper, small ale 2 copper, honey brew 3 copper. Local conditions, supply, war, materials and bargaining affect prices.\n\nThe former Gloin purse ledger belongs to retired gameplay and is not a starting balance. A new purse is to be established when the new campaign begins.",
       "status": "canon",
       "era": "All Ages",
       "region": "Karak-Varn",
@@ -2480,7 +2496,7 @@
       "category": "Campaign",
       "title": "Player Agency and Story Rules",
       "summary": "Gloin belongs to the player; NPCs act independently and mysteries have no preset answer.",
-      "body": "Only the player chooses what Gloin says, thinks, attempts, intends and decides. Narration may show consequences, fair risk, injuries, training, relationships, world reaction and independent NPC agency. No plot armor or guaranteed hero status. The world remains dark and gritty yet hopeful.\n\nAlways maintain chronology, exact inventory and money, source attribution, NPC knowledge boundaries and the current pause; do not advance the story during editorial work. Ancestry and possible descent from the First Throne remain genuinely unchosen. Dialogue prompts are options, not commands.",
+      "body": "Only the player chooses what Gloin says, thinks, attempts, intends and decides. Narration may show consequences, fair risk, injuries, training, relationships, world reaction and independent NPC agency. No plot armor or guaranteed hero status. The world remains dark and gritty yet hopeful.\n\nAlways maintain chronology, exact inventory and money, source attribution, NPC knowledge boundaries and the new campaign state once play begins; there is currently no active campaign pause. Do not advance the story during editorial work. Ancestry and possible descent from the First Throne remain genuinely unchosen. Dialogue prompts are options, not commands.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -2700,14 +2716,16 @@
       "id": "gloin-s-11-copper-ledger-discrepancy",
       "category": "Mysteries",
       "title": "Gloin’s 11-Copper Ledger Discrepancy",
-      "summary": "Earlier purse plus known eight-silver supper produces 11 copper more than latest confirmed 10s82c; missing transaction or ledger mistake is unverified.",
-      "body": "Earlier purse plus known eight-silver supper produces 11 copper more than latest confirmed 10s82c; missing transaction or ledger mistake is unverified. Keep current confirmed balance.",
-      "status": "disputed",
+      "summary": "[RETIRED CAMPAIGN — NOT CANON] Earlier purse plus known eight-silver supper produces 11 copper more than latest confirmed 10s82c; missing transaction or ledger mistake is unverified.",
+      "body": "RETIRED GAMEPLAY RECORD. The creator reset Gloin's campaign on 2026-11-21. The following is archival text only, not an event that happened in the current Eryndor timeline. No discoveries, NPC disclosures, player choices, injuries, training, financial transactions or quest states from this record carry forward.\n\nEarlier purse plus known eight-silver supper produces 11 copper more than latest confirmed 10s82c; missing transaction or ledger mistake is unverified. Keep current confirmed balance.",
+      "status": "non-canon",
       "era": "All Ages",
       "region": "World",
       "tags": [
         "mystery",
-        "continuity"
+        "continuity",
+        "retired campaign",
+        "non-canon"
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
