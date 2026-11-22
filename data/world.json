@@ -139,7 +139,8 @@
       "date": "2026-11-21",
       "scope": "All Gloin gameplay and its consequences retired from canon; setting, characters, locations, First Throne, Silence Below and eastern mine preserved",
       "status": "reset awaiting new start",
-      "archivePolicy": "Keep historical source texts unaltered, explicitly noncanonical as gameplay"
+      "archivePolicy": "Keep historical source texts unaltered, explicitly noncanonical as gameplay",
+      "audit": "All 54 archived source documents reviewed for scope and campaign-contamination indicators; 149 curated entries checked for status and direct retired-event references; archives kept intact; detailed world-history contradiction reconciliation remains open."
     }
   },
   "records": [
@@ -207,7 +208,7 @@
       "category": "Foundations",
       "title": "Ages Versus Eras",
       "summary": "Worldwide Ages are not the same as continent-specific historical eras.",
-      "body": "Five worldwide Ages are recognized; the current one is the Fifth Age. Each civilization may name and subdivide historical time differently. The Second Age's Awakening, Wonder and Fire divisions are Avarran conventions, not mandatory world calendars.\n\nThe campaign's date is Autumn Day 22, Year 3847 of the Era of Crowns, within the Fifth Age. That year number must not automatically be counted from the global beginning of the Fifth Age.",
+      "body": "Five worldwide Ages are recognized; the current one is the Fifth Age. Each civilization may name and subdivide historical time differently. The Second Age's Awakening, Wonder and Fire divisions are Avarran conventions, not mandatory world calendars.\n\nThe Era of Crowns in the Fifth Age has a documented year-numbering convention; the former campaign date (Autumn Day 22, Year 3847) is retired and is not the new campaign start date. Era of Crowns years must not automatically be counted from the global beginning of the Fifth Age.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -1649,7 +1650,7 @@
       "category": "Magic",
       "title": "Ancient Harmonisation and Fusion",
       "summary": "A lost ancient technique used Natural Magic as a shared medium to fuse otherwise distinct disciplines into a unified working.",
-      "body": "A lost ancient technique used Natural Magic as a shared medium to fuse otherwise distinct disciplines into a unified working. It predates the First Throne, is not exclusively Khazari, and cannot be assumed available to Gloin.",
+      "body": "A lost ancient technique used Natural Magic as a shared medium to fuse otherwise distinct disciplines into a unified working. It predates the First Throne, is not exclusively Khazari, and is not an automatically learned ability of any future player character.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -1751,7 +1752,7 @@
       "category": "Magic",
       "title": "Ancestral Binding",
       "summary": "Controversial magic associated with bloodlines, vows and inherited obligations.",
-      "body": "Controversial magic associated with bloodlines, vows and inherited obligations. The First Throne practiced it; no link to Gloin has been established.",
+      "body": "Controversial magic associated with bloodlines, vows and inherited obligations. The First Throne practiced it; no genealogical connection to Gloin is established or predetermined.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -2562,9 +2563,9 @@
     {
       "id": "eastern-mine-investigation",
       "category": "Mysteries",
-      "title": "Eastern Mine Investigation",
+      "title": "Eastern Mine — Historical Mystery",
       "summary": "Mine officially sealed 63 years ago.",
-      "body": "Mine officially sealed 63 years ago. Public plans show six levels, Borin’s private survey nine. Older engineered lower galleries, a Hall Beneath the Mountain and sealed stone door are documented; no entity or active threat is proven.",
+      "body": "An eastern Karak-Varn mine was officially sealed 63 years before the former campaign's Year 3847 setting; the precise new present-day calendar reference is not yet chosen. Archival accounts describe a discrepancy between six public levels and nine on a private survey, older engineered galleries, a Hall Beneath the Mountain and a sealed stone door. These are preserved as setting history, documents and unresolved claims, not as Gloin's discoveries or proof of a living entity, an active breach or an awakened threat. Borin is an established miner associated with the survey; the old gameplay sequence in which he revealed it to Gloin is retired.",
       "status": "open",
       "era": "All Ages",
       "region": "World",
@@ -2598,7 +2599,7 @@
       "category": "Mysteries",
       "title": "Varric Stonehelm Repository",
       "summary": "Historical records may have been transferred to a private Crownward repository with obscured access names.",
-      "body": "Historical records may have been transferred to a private Crownward repository with obscured access names. Hadrik is still verifying its records and possible safety; contents remain unknown.",
+      "body": "Historical records may have been transferred to a private Crownward repository with obscured access names. Its records, access and contents remain unverified; Hadrik's investigation as played in the retired campaign does not carry forward.",
       "status": "open",
       "era": "All Ages",
       "region": "World",
