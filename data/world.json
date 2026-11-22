@@ -141,6 +141,11 @@
       "status": "reset awaiting new start",
       "archivePolicy": "Keep historical source texts unaltered, explicitly noncanonical as gameplay",
       "audit": "All 54 archived source documents reviewed for scope and campaign-contamination indicators; 149 curated entries checked for status and direct retired-event references; archives kept intact; detailed world-history contradiction reconciliation remains open."
+    },
+    "familyTreeDecision": {
+      "date": "2026-11-21",
+      "confirmed": "Durgan Hammerfeld and Mara Hammerfeld are Gloin's parents",
+      "pendingReview": "Other relatives, ages, professions and sibling order shown in current roster awaiting user verification"
     }
   },
   "records": [
