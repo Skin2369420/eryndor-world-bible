@@ -165,6 +165,12 @@
     "creatorCorrections20261121": {
       "orcOrigin": "Third Age, precise date undecided; southern dark mage link retained. Earlier Second Age correction explicitly retracted.",
       "cataclysm": "Multiple moons collided and initiated Great Cataclysm; exact details open"
+    },
+    "futureCampaignStart": {
+      "status": "working",
+      "period": "Late Fourth Age or beginning of Fifth Age",
+      "exactYear": "undecided",
+      "note": "New campaign reset remains in effect; do not assume previous Fifth Age Era of Crowns date or old gameplay timeline is the campaign start."
     }
   },
   "records": [
