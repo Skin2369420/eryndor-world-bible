@@ -144,8 +144,9 @@
     },
     "familyTreeDecision": {
       "date": "2026-11-21",
-      "confirmed": "Durgan Hammerfeld and Mara Hammerfeld are Gloin's parents",
-      "pendingReview": "Other relatives, ages, professions and sibling order shown in current roster awaiting user verification"
+      "status": "confirmed",
+      "confirmed": "Durgan (168) and Mara (161) parents; children Bruni (57), Gloin (42), Tovin (34), Elska (26) in that order; Mara's brother Harn (174), his wife Vessa (158), their son Rurik (39); established occupations and relationships approved",
+      "future": "Additional relatives may be introduced later; do not invent them now"
     }
   },
   "records": [
