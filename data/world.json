@@ -147,6 +147,20 @@
       "status": "confirmed",
       "confirmed": "Durgan (168) and Mara (161) parents; children Bruni (57), Gloin (42), Tovin (34), Elska (26) in that order; Mara's brother Harn (174), his wife Vessa (158), their son Rurik (39); established occupations and relationships approved",
       "future": "Additional relatives may be introduced later; do not invent them now"
+    },
+    "issueReview20261121": {
+      "1": "confirmed family tree",
+      "2": "First Throne chronology open",
+      "3": "Silence Below chronology open",
+      "4": "Eastern mine dates deferred",
+      "5": "Seven Thrones founding chronology next",
+      "6": "First Age evidence probably intentionally open",
+      "7": "Lunar cosmology open and gradual",
+      "8": "Earth-like everyday physical behavior confirmed; do not reopen",
+      "9": "Continental era names low priority",
+      "10": "Population consistency deferred",
+      "11": "Superseded/proposed canon list requested for review",
+      "12": "Independent NPC biographies optional future development"
     }
   },
   "records": [
@@ -155,7 +169,7 @@
       "category": "Foundations",
       "title": "Eryndor — Planetary Fundamentals",
       "summary": "A five-continent, magically alive world, approximately 50,000 km in diameter.",
-      "body": "Eryndor is approximately 50,000 km in diameter and 157,080 km around. Its surface is 60% water and 40% land. A 24-hour day, 360-day year, and four roughly 90-day seasons govern the working calendar.\n\nThe older 13,400-km diameter, 42,000-km circumference and 71%-water model are superseded.\n\nEveryday experienced gravity, hydrology, weather, agriculture and biology resemble ordinary physics; the explanation for familiar surface gravity on so large a planet is still undecided. World magic is a deliberate fantasy exception.",
+      "body": "Eryndor is approximately 50,000 km in diameter and 157,080 km around. Its surface is 60% water and 40% land. A 24-hour day, 360-day year, and four roughly 90-day seasons govern the working calendar.\n\nThe older 13,400-km diameter, 42,000-km circumference and 71%-water model are superseded.\n\nEveryday gravity, hydrology, weather, agriculture and biology behave as on Earth, by explicit creator decision. The world is magical; no further physical justification for familiar gravity is required unless the creator later requests one.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
