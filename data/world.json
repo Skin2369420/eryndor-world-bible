@@ -171,6 +171,12 @@
       "period": "Late Fourth Age or beginning of Fifth Age",
       "exactYear": "undecided",
       "note": "New campaign reset remains in effect; do not assume previous Fifth Age Era of Crowns date or old gameplay timeline is the campaign start."
+    },
+    "greatCataclysmReview": {
+      "status": "reopened for editing",
+      "previousVersionPreserved": true,
+      "scope": "cause, moon collisions, chronology, impact, lunar magic and aftermath all revisable",
+      "date": "2026-11-21"
     }
   },
   "records": [
@@ -312,8 +318,8 @@
       "category": "History",
       "title": "First Great Cataclysm",
       "summary": "Multiple moons collided, triggering the Great Cataclysm and ending the First Age.",
-      "body": "Multiple moons collided, initiating the Great Cataclysm that ended the First Age and overturned the world's civilizations and lunar magical order. Destroyed source-moons permanently ended their associated magical disciplines; fragments of some shattered bodies became new moons and sources of new magic. The initiating multiple-moon collisions are established canon. Exact participating moon count, collision sequence, wider cascade and subsequent astronomical details remain open.",
-      "status": "canon",
+      "body": "Multiple moons collided, initiating the Great Cataclysm that ended the First Age and overturned the world's civilizations and lunar magical order. Destroyed source-moons permanently ended their associated magical disciplines; fragments of some shattered bodies became new moons and sources of new magic. The initiating multiple-moon collisions are established canon. Exact participating moon count, collision sequence, wider cascade and subsequent astronomical details remain open.\n\nCREATOR REOPENED FOR EDITING (2026-11-21): All aspects of the Great Cataclysm, including the multiple-moon collision trigger, sequence, extent, lunar magic consequences and dating, may be reconsidered. The above describes the previous established version, preserved for comparison; do not treat the collision mechanism as newly immutable canon while revisions are underway.",
+      "status": "working",
       "era": "End of First Age",
       "region": "World",
       "tags": [
