@@ -270,6 +270,16 @@
       "eldar": "Adulthood at age 75; culturally distinct coming-of-age ceremonies to develop later",
       "khazariLegalAdulthood": 30,
       "eldarLegalAdulthood": 75
+    },
+    "avarranSecondAgeBirthBoom": {
+      "status": "canon",
+      "scope": "Avarra only",
+      "baseline": "Each people's established ordinary birth rate",
+      "awakening": "At least 2× baseline, except sleeping Khazari",
+      "wonder": "At least 2× baseline; Khazari awakening Years 322–488",
+      "fire": "Approximately 1.5× baseline",
+      "interpretedAs": "Birth rates, not total population multipliers",
+      "currentPopulationTotals": "Unchanged pending demographic review"
     }
   },
   "records": [
@@ -358,7 +368,7 @@
       "category": "Foundations",
       "title": "Current World Population",
       "summary": "2.0628 billion modeled residents across 28 numerical categories.",
-      "body": "The current sixfold planning census contains 2,062,800,000 modeled residents: Avarra 1,019,760,000; Tharvorn 171,000,000; Sahrad 282,222,000; Orundel 393,600,000; Vaelora 196,218,000. This replaces a 343.8-million draft.\n\nGlobal Khazari 144 million, Eldar 108 million, Urakai 186 million, humans 960 million. The Seven Khazari Throne domains total 132 million and are INCLUDED within worldwide Khazari; Karak-Varn's 22.8 million are included within the Thrones. Drakari, Aelwyn and Living Mountains are not precisely enumerated.\n\nThis is a worldbuilding resimulation, not sudden births or a confirmed omniscient census. Metro-versus-domain boundaries need reconciliation.",
+      "body": "The current sixfold planning census contains 2,062,800,000 modeled residents: Avarra 1,019,760,000; Tharvorn 171,000,000; Sahrad 282,222,000; Orundel 393,600,000; Vaelora 196,218,000. This replaces a 343.8-million draft.\n\nGlobal Khazari 144 million, Eldar 108 million, Urakai 186 million, humans 960 million. The Seven Khazari Throne domains total 132 million and are INCLUDED within worldwide Khazari; Karak-Varn's 22.8 million are included within the Thrones. Drakari, Aelwyn and Living Mountains are not precisely enumerated.\n\nThis is a worldbuilding resimulation, not sudden births or a confirmed omniscient census. Metro-versus-domain boundaries need reconciliation.\n\nCANON — AVARRAN SECOND-AGE BIRTH BOOM (2026-11-22): Across Avarra's peoples, the birth rate was at least 2× each people's ordinary baseline during the Era of Awakening (Second Age Years 1–321) and Era of Wonder (Years 322–1321), falling to approximately 1.5× baseline during the Era of Fire (Years 1322–1437). These are BIRTH-RATE multipliers, NOT multipliers of population totals; the population may keep rising after the birth rate falls. Khazari remained asleep for all of Awakening and awakened gradually during Years 322–488; they participate only from awakening onward, not during Years 1–321. This event is specific to Avarra and is not automatically imposed on the other continents. Ordinary baseline birth rates, previously established long lifespans, existing present-day population totals, and populations of other continents are NOT changed by this historical note. Population-size consequences, migration, mortality, disasters and subsequent-age demographics require a separate continuity audit.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -369,7 +379,7 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-22"
     },
     {
       "id": "world-geography-awaiting-remapping",
@@ -428,7 +438,7 @@
       "category": "History",
       "title": "The Second Age — Avarran Chronology",
       "summary": "Exactly 1,437 years worldwide, divided in Avarran histories into Awakening (1–321), Wonder (322–1,321) and Fire (1,322–1,437).",
-      "body": "Exactly 1,437 years worldwide, divided in Avarran histories into Awakening (1–321), Wonder (322–1,321) and Fire (1,322–1,437). Other continents may use different names, eras and date boundaries.\n\nCREATOR CANON CLARIFICATION (2026-11-21): The First Throne is ALREADY FORGOTTEN by the Second Age for magical reasons tied to the Great Cataclysm. Second Age Khazari do not consciously know of the First Throne or found the Seven Thrones as deliberate successors to it. Shared ancestral heritage, surviving structures, traditions and machinery may persist without remembered provenance. The exact memory-erasure mechanism, geographic scope, exceptions, persistence, and whether anyone retained partial knowledge remain UNDECIDED. Previous suggestions that early Second Age founders knowingly preserve First Throne laws, records, dynastic claims or direct political succession are not canon.\n\nCREATOR CANON DIRECTION (2026-11-21): Throughout most of the Second Age, Khazari/dwarven societies were largely isolated; other peoples knew little or nothing reliable about them. Significant outside awareness/contact did not develop until the late Second Age. This does not imply low populations, technological backwardness, total absence of isolated individual contacts, or an exact year for broader contact. The proposed early/middle/late phases are illustrative, not locked historical events.\n\nCREATOR NEW LORE (2026-11-21): In addition to magical forgetting of the First Throne, the Khazari/dwarves slept beneath the mountains after the Great Cataclysm until the 'second era'. Context suggests the second Avarran era of the Second Age (Era of Wonder, Years 322–1321), but this exact interpretation and wake-up year are not yet explicitly confirmed. The slumber's mechanism, whether all dwarves were affected, duration and pattern of awakening, and what memories survived remain undecided. This supersedes any portrayal of extensive active Khazari rebuilding during the early Second Age.\n\nCREATOR CONFIRMATION (2026-11-21): The Khazari awoke gradually across a 167-year span at the START of the Second Age's second Avarran era, the Era of Wonder: Second Age Years 322–488 inclusive (167 years). They had slept beneath the mountains since the Great Cataclysm, and the First Throne was magically forgotten. The First Throne kept very few conventional written documents because it developed an advanced magical method of writing OR of storing information directly in people's minds, rendering routine written documentation obsolete except for special cases; surviving ordinary written documents would mainly be very old, predating the system, or special-purpose. Whether the actual mechanism is magical writing, mind-storage or a hybrid remains UNDECIDED. Do not canonize a particular storage medium or how it failed. Earlier early-Second-Age active Khazari rebuilding narratives must be revised to reflect the slumber.",
+      "body": "Exactly 1,437 years worldwide, divided in Avarran histories into Awakening (1–321), Wonder (322–1,321) and Fire (1,322–1,437). Other continents may use different names, eras and date boundaries.\n\nCREATOR CANON CLARIFICATION (2026-11-21): The First Throne is ALREADY FORGOTTEN by the Second Age for magical reasons tied to the Great Cataclysm. Second Age Khazari do not consciously know of the First Throne or found the Seven Thrones as deliberate successors to it. Shared ancestral heritage, surviving structures, traditions and machinery may persist without remembered provenance. The exact memory-erasure mechanism, geographic scope, exceptions, persistence, and whether anyone retained partial knowledge remain UNDECIDED. Previous suggestions that early Second Age founders knowingly preserve First Throne laws, records, dynastic claims or direct political succession are not canon.\n\nCREATOR CANON DIRECTION (2026-11-21): Throughout most of the Second Age, Khazari/dwarven societies were largely isolated; other peoples knew little or nothing reliable about them. Significant outside awareness/contact did not develop until the late Second Age. This does not imply low populations, technological backwardness, total absence of isolated individual contacts, or an exact year for broader contact. The proposed early/middle/late phases are illustrative, not locked historical events.\n\nCREATOR NEW LORE (2026-11-21): In addition to magical forgetting of the First Throne, the Khazari/dwarves slept beneath the mountains after the Great Cataclysm until the 'second era'. Context suggests the second Avarran era of the Second Age (Era of Wonder, Years 322–1321), but this exact interpretation and wake-up year are not yet explicitly confirmed. The slumber's mechanism, whether all dwarves were affected, duration and pattern of awakening, and what memories survived remain undecided. This supersedes any portrayal of extensive active Khazari rebuilding during the early Second Age.\n\nCREATOR CONFIRMATION (2026-11-21): The Khazari awoke gradually across a 167-year span at the START of the Second Age's second Avarran era, the Era of Wonder: Second Age Years 322–488 inclusive (167 years). They had slept beneath the mountains since the Great Cataclysm, and the First Throne was magically forgotten. The First Throne kept very few conventional written documents because it developed an advanced magical method of writing OR of storing information directly in people's minds, rendering routine written documentation obsolete except for special cases; surviving ordinary written documents would mainly be very old, predating the system, or special-purpose. Whether the actual mechanism is magical writing, mind-storage or a hybrid remains UNDECIDED. Do not canonize a particular storage medium or how it failed. Earlier early-Second-Age active Khazari rebuilding narratives must be revised to reflect the slumber.\n\nCANON — AVARRAN SECOND-AGE BIRTH BOOM (2026-11-22): Across Avarra's peoples, the birth rate was at least 2× each people's ordinary baseline during the Era of Awakening (Second Age Years 1–321) and Era of Wonder (Years 322–1321), falling to approximately 1.5× baseline during the Era of Fire (Years 1322–1437). These are BIRTH-RATE multipliers, NOT multipliers of population totals; the population may keep rising after the birth rate falls. Khazari remained asleep for all of Awakening and awakened gradually during Years 322–488; they participate only from awakening onward, not during Years 1–321. This event is specific to Avarra and is not automatically imposed on the other continents. Ordinary baseline birth rates, previously established long lifespans, existing present-day population totals, and populations of other continents are NOT changed by this historical note. Population-size consequences, migration, mortality, disasters and subsequent-age demographics require a separate continuity audit.",
       "status": "canon",
       "era": "Second Age",
       "region": "World",
@@ -438,14 +448,14 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-22"
     },
     {
       "id": "era-of-awakening",
       "category": "History",
       "title": "Era of Awakening",
       "summary": "Years 1–321 in Avarran chronology.",
-      "body": "Years 1–321 in Avarran chronology. Peoples rebuilt after lunar disruption, learned to support their societies through mundane agriculture, engineering, records and sanitation alongside surviving magic. Unequal recovery, famine, exploitation and reform all occurred.",
+      "body": "Years 1–321 in Avarran chronology. Peoples rebuilt after lunar disruption, learned to support their societies through mundane agriculture, engineering, records and sanitation alongside surviving magic. Unequal recovery, famine, exploitation and reform all occurred.\n\nCANON — AVARRAN SECOND-AGE BIRTH BOOM (2026-11-22): Across Avarra's peoples, the birth rate was at least 2× each people's ordinary baseline during the Era of Awakening (Second Age Years 1–321) and Era of Wonder (Years 322–1321), falling to approximately 1.5× baseline during the Era of Fire (Years 1322–1437). These are BIRTH-RATE multipliers, NOT multipliers of population totals; the population may keep rising after the birth rate falls. Khazari remained asleep for all of Awakening and awakened gradually during Years 322–488; they participate only from awakening onward, not during Years 1–321. This event is specific to Avarra and is not automatically imposed on the other continents. Ordinary baseline birth rates, previously established long lifespans, existing present-day population totals, and populations of other continents are NOT changed by this historical note. Population-size consequences, migration, mortality, disasters and subsequent-age demographics require a separate continuity audit.",
       "status": "canon",
       "era": "Second Age",
       "region": "World",
@@ -455,14 +465,14 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-22"
     },
     {
       "id": "era-of-wonder",
       "category": "History",
       "title": "Era of Wonder",
       "summary": "Years 322–1,321 in Avarran chronology.",
-      "body": "Years 322–1,321 in Avarran chronology. A thousand-year flourishing of new fragment-moon magics, engineering, art, education, medicine, trade and great kingdoms, with continuing inequality, conflict and reform. The destroyed First Age magics were not recovered.",
+      "body": "Years 322–1,321 in Avarran chronology. A thousand-year flourishing of new fragment-moon magics, engineering, art, education, medicine, trade and great kingdoms, with continuing inequality, conflict and reform. The destroyed First Age magics were not recovered.\n\nCANON — AVARRAN SECOND-AGE BIRTH BOOM (2026-11-22): Across Avarra's peoples, the birth rate was at least 2× each people's ordinary baseline during the Era of Awakening (Second Age Years 1–321) and Era of Wonder (Years 322–1321), falling to approximately 1.5× baseline during the Era of Fire (Years 1322–1437). These are BIRTH-RATE multipliers, NOT multipliers of population totals; the population may keep rising after the birth rate falls. Khazari remained asleep for all of Awakening and awakened gradually during Years 322–488; they participate only from awakening onward, not during Years 1–321. This event is specific to Avarra and is not automatically imposed on the other continents. Ordinary baseline birth rates, previously established long lifespans, existing present-day population totals, and populations of other continents are NOT changed by this historical note. Population-size consequences, migration, mortality, disasters and subsequent-age demographics require a separate continuity audit.",
       "status": "canon",
       "era": "Second Age",
       "region": "World",
@@ -472,14 +482,14 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-22"
     },
     {
       "id": "era-of-fire",
       "category": "History",
       "title": "Era of Fire",
       "summary": "Years 1,322–1,437 in Avarran chronology.",
-      "body": "Years 1,322–1,437 in Avarran chronology. Exiled dark mages transformed fertile southeastern Avarra into the Southern Wastes and created its volcano. Elsewhere, independent kingdoms and cultures continued their own histories. This era is NOT blank: dedicated annals and regional histories exist.",
+      "body": "Years 1,322–1,437 in Avarran chronology. Exiled dark mages transformed fertile southeastern Avarra into the Southern Wastes and created its volcano. Elsewhere, independent kingdoms and cultures continued their own histories. This era is NOT blank: dedicated annals and regional histories exist.\n\nCANON — AVARRAN SECOND-AGE BIRTH BOOM (2026-11-22): Across Avarra's peoples, the birth rate was at least 2× each people's ordinary baseline during the Era of Awakening (Second Age Years 1–321) and Era of Wonder (Years 322–1321), falling to approximately 1.5× baseline during the Era of Fire (Years 1322–1437). These are BIRTH-RATE multipliers, NOT multipliers of population totals; the population may keep rising after the birth rate falls. Khazari remained asleep for all of Awakening and awakened gradually during Years 322–488; they participate only from awakening onward, not during Years 1–321. This event is specific to Avarra and is not automatically imposed on the other continents. Ordinary baseline birth rates, previously established long lifespans, existing present-day population totals, and populations of other continents are NOT changed by this historical note. Population-size consequences, migration, mortality, disasters and subsequent-age demographics require a separate continuity audit.",
       "status": "canon",
       "era": "Second Age",
       "region": "Avarra",
@@ -489,7 +499,7 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-22"
     },
     {
       "id": "southern-wastes-dark-mages",
