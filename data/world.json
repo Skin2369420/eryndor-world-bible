@@ -460,7 +460,8 @@
       "sonsUnificationMotive": "Ambition to build great Elven magical forges and arcane towers; discovered his prosperous one-fifth-forest kingdom lacked manpower/resources; used this as the reason for unifying the Eldar",
       "craftInspirations": "Celebrimbor and Warhammer Elven smiths, aesthetic inspiration only; no imported magical capabilities",
       "firstConquestAfterSuccession": "1,086 years later, approximately First Age Year 3,286"
-    }
+    },
+    "livingWorldPrinciple": "CREATOR DIRECTION (2026-11-23): Eryndor should feel lived in, with people who have their own problems, relationships, ambitions, livelihoods and routines, not simply populations waiting for rulers, wars, legendary heroes or the player. Blend mature political tensions, difficult daily life, folklore, supernatural dangers and monster hunting with Eryndor's established magic, peoples and history. Inspiration from The Witcher is tonal and structural only; do not copy its proprietary characters, monsters, factions, plots or institutions. Each place and culture needs ordinary joys as well as suffering, and people continue making decisions when not observed. Concrete new customs, monsters, occupational institutions and historical incidents must be developed individually before being labeled established canon."
   },
   "records": [
     {
@@ -509,7 +510,7 @@
       "category": "Foundations",
       "title": "World Tone and Creative Rules",
       "summary": "Dark and gritty yet hopeful; no species is uniformly good or evil.",
-      "body": "Eryndor contains exploitation, conquest, famine, prejudice and catastrophic loss, alongside friendship, celebration, scholarship, rescue and reform. Consequences matter. Fantasy-scale cities and heroes are allowed without requiring Earth-historical ceilings.\n\nLong-lived peoples can have large families; birth rates are not silently adjusted. A person may devote a century to a craft or choose domestic life; cultures have distinct expectations. No single trait determines everyone in a people. The creator can revise accepted canon with explicit supersession and a retained change log.",
+      "body": "Eryndor contains exploitation, conquest, famine, prejudice and catastrophic loss, alongside friendship, celebration, scholarship, rescue and reform. Consequences matter. Fantasy-scale cities and heroes are allowed without requiring Earth-historical ceilings.\n\nLong-lived peoples can have large families; birth rates are not silently adjusted. A person may devote a century to a craft or choose domestic life; cultures have distinct expectations. No single trait determines everyone in a people. The creator can revise accepted canon with explicit supersession and a retained change log.\n\nLIVED-IN-WORLD PRINCIPLE (CREATOR CANON, 2026-11-23): All cultures and historical periods should portray ordinary inhabitants as people with self-directed lives: work, money, families and friendships, disagreements, celebrations, worries, local beliefs, health, ambitions and responsibilities. Politics, warfare, changing markets, monsters, magic and disasters should affect their everyday choices, but do not erase their independence or make every scene bleak. Include folklore, dangerous wilderness, monster-related problems, tough moral decisions and material hardship as appropriate to each region, inspired by the grounded texture of darker fantasy without copying another setting's specific content. Not every problem is solved by a protagonist or king; life advances offstage, with consequences. Specific new creatures, guilds, crises and individual stories remain unestablished until explicitly developed.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -520,7 +521,7 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-23"
     },
     {
       "id": "ages-versus-eras",
@@ -2816,7 +2817,7 @@
       "category": "Campaign",
       "title": "Player Agency and Story Rules",
       "summary": "Gloin belongs to the player; NPCs act independently and mysteries have no preset answer.",
-      "body": "Only the player chooses what Gloin says, thinks, attempts, intends and decides. Narration may show consequences, fair risk, injuries, training, relationships, world reaction and independent NPC agency. No plot armor or guaranteed hero status. The world remains dark and gritty yet hopeful.\n\nAlways maintain chronology, exact inventory and money, source attribution, NPC knowledge boundaries and the new campaign state once play begins; there is currently no active campaign pause. Do not advance the story during editorial work. Ancestry and possible descent from the First Throne remain genuinely unchosen. Dialogue prompts are options, not commands.",
+      "body": "Only the player chooses what Gloin says, thinks, attempts, intends and decides. Narration may show consequences, fair risk, injuries, training, relationships, world reaction and independent NPC agency. No plot armor or guaranteed hero status. The world remains dark and gritty yet hopeful.\n\nAlways maintain chronology, exact inventory and money, source attribution, NPC knowledge boundaries and the new campaign state once play begins; there is currently no active campaign pause. Do not advance the story during editorial work. Ancestry and possible descent from the First Throne remain genuinely unchosen. Dialogue prompts are options, not commands.\n\nINDEPENDENT DAILY LIVES (CREATOR DIRECTION, 2026-11-23): NPCs, groups and settlements are not static quest dispensers; they pursue family, work, survival, money, duty, faith, rivalry, love and ordinary goals even when the player is elsewhere. Their circumstances can change because of local or world events, but never invent irreversible unplayed campaign developments during editorial worldbuilding. Preserve NPC knowledge boundaries, continuity and player agency.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -2826,7 +2827,7 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-23"
     },
     {
       "id": "first-throne",
@@ -3084,6 +3085,32 @@
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
       "updated": "2026-11-21"
+    },
+    {
+      "id": "everyday-lives-and-an-independent-world",
+      "category": "Foundations",
+      "title": "Everyday Lives — A World Beyond Heroes and Kings",
+      "summary": "Eryndor's people live independent, consequential lives: families, livelihoods, beliefs, hardship, joy, folklore and local troubles persist beyond grand histories.",
+      "body": "CREATOR-ESTABLISHED WORLD DESIGN PRINCIPLE (2026-11-23)\n\nEryndor is an inhabited world, not merely a sequence of ages, kingdoms and major battles. Ordinary people should have their own daily struggles, pleasures, work, relationships, interests, grudges, aspirations and choices. Their lives continue between major events and outside the protagonist's field of view. Merchants, farmers, craftspeople, soldiers, scholars, healers, children, elders, rulers and outsiders should not exist merely to explain lore or serve a hero; all have their own priorities.\n\nGENERAL STORYTELLING REQUIREMENTS\n- Ground communities in food, trade, shelter, labour, livelihoods, local law, custom, faith, family ties, festivals, loss, illness, status, crime and relationships, with differences across cultures and historical eras. Do not presume every community faces all of these at once.\n- Politics and war have human-scale consequences: taxes and levies, disrupted harvests and trade, rumours, loyalties, fear, opportunism and genuine convictions. Avoid flattening entire peoples into one opinion or portraying all rulers, soldiers and civilians as morally identical.\n- Include supernatural dangers, monsters, folklore, curses, mysteries and the possibility of skilled local problem-solvers or hunters where appropriate, without imposing one universal monster-hunting profession, universal creature roster or borrowed Witcher lore. Monsters have places in Eryndor's ecology and magic; their details require individual development.\n- Preserve Eryndor's established practical magic and its limits. Magic changes everyday possibilities but must not automatically abolish poverty, illness, danger, hard work or meaningful practical constraints.\n- People react to events using their own information, resources, biases and duties. What characters know and believe need not match what is objectively true or what historians later claim.\n- Leave room for tenderness, humour, celebration, friendship, fulfilment and everyday beauty. The setting remains dark and gritty BUT HOPEFUL; relentless misery and arbitrary brutality are not required.\n- Develop consequences at multiple scales: a war changes rulers and borders, but also families, occupations and neighbourhoods. Small private decisions can matter without having to become world-shaping plots.\n- Let offstage people and settlements continue to change over time, while respecting the distinction between worldbuilding proposals and actual played campaign events. Do not advance a player's story without their action.\n\nCONTINUITY BOUNDARIES\nThis is CANON AS A CREATIVE PRINCIPLE, not confirmation that any particular monster, curse, village event, institution, custom or character has been created. The Witcher is an inspiration for atmosphere, folklore and moral complexity, not a source of imported names, factions, quests or proprietary mythology. Local conditions must be designed for Eryndor rather than assumed to be identical across continents.",
+      "status": "canon",
+      "era": "All Ages",
+      "region": "Across Eryndor",
+      "tags": [
+        "world tone",
+        "everyday life",
+        "culture",
+        "folklore",
+        "ecology",
+        "npc agency",
+        "continuity"
+      ],
+      "related": [
+        "world-tone-and-creative-rules",
+        "player-agency-and-story-rules",
+        "everyday-practical-magic"
+      ],
+      "source": "Creator decision in live worldbuilding conversation, 2026-11-23",
+      "updated": "2026-11-23"
     }
   ]
 }
