@@ -5,8 +5,8 @@
   const STORAGE_KEY = 'eryndor-world-bible-local-edits-v1';
   const HISTORY_KEY = 'eryndor-world-bible-local-history-v1';
   const STATUSES = {canon:'Canon',working:'Working lore',reported:'Reported',disputed:'Disputed',open:'Open',superseded:'Superseded',noncanon:'Non-canon'};
-  const SHELVES = ['Foundations','History','Places','Realms','Peoples','Magic','People & NPCs','Campaign','Mysteries'];
-  const SYMBOLS = {'Foundations':'✧','History':'◷','Places':'◇','Realms':'♜','Peoples':'◌','Magic':'✦','People & NPCs':'♟','Campaign':'⚔','Mysteries':'◎'};
+  const SHELVES = ['Foundations','History','Places','Realms','Peoples','Magic','People & NPCs','Historical Roleplay','Mysteries'];
+  const SYMBOLS = {'Foundations':'✧','History':'◷','Places':'◇','Realms':'♜','Peoples':'◌','Magic':'✦','People & NPCs':'♟','Historical Roleplay':'▣','Mysteries':'◎'};
   let base = null;
   let sourceIndex = null;
   const sourceCache = new Map();
@@ -64,19 +64,19 @@
     }).join('');
   }
   function renderOverview() {
-    const highlighted = ['the-second-age-avarran-chronology','southern-wastes-dark-mages','ironspine-mountains','creation-of-the-orcs','ancient-harmonisation-and-fusion','current-campaign-pause'].map(byId).filter(Boolean);
+    const highlighted = ['the-second-age-avarran-chronology','southern-wastes-dark-mages','ironspine-mountains','creation-of-the-orcs','ancient-harmonisation-and-fusion','eryndor-passion-project-and-open-storytelling'].map(byId).filter(Boolean);
     const m=base.meta;
-    return `<section class="hero"><div class="hero-art"></div><div class="hero-content"><div class="eyebrow">THE WORLD ENDURES · THE ARCHIVE REMEMBERS</div><h1 class="display-title">A world of <em>stone,</em><br>starlight &amp; stories.</h1><p class="lede">The canonical living encyclopedia of Eryndor. Five Ages, independent civilizations, lost magic—and a Khazari dwarf whose next choice remains unwritten.</p><div class="hero-buttons"><a class="btn btn-primary" href="#library">Explore the World Bible <span>↗</span></a><a class="btn btn-quiet" href="#campaign">Resume the campaign log</a><a class="btn btn-quiet" href="./vault.html">Read all 54 source volumes ↗</a></div></div></section>
+    return `<section class="hero"><div class="hero-art"></div><div class="hero-content"><div class="eyebrow">THE WORLD ENDURES · THE ARCHIVE REMEMBERS</div><h1 class="display-title">A world of <em>stone,</em><br>starlight &amp; stories.</h1><p class="lede">The living encyclopedia of Eryndor: a persistent fantasy world, a passion project, and the possible foundation for future books. No character is assigned the role of protagonist.</p><div class="hero-buttons"><a class="btn btn-primary" href="#library">Explore the World Bible <span>↗</span></a><a class="btn btn-quiet" href="#campaign">Browse the former roleplay archive</a><a class="btn btn-quiet" href="./vault.html">Read all 54 source volumes ↗</a></div></div></section>
       <div class="stats-grid"><div class="stat-card"><div class="stat-number">5</div><div class="stat-label">World Ages</div></div><div class="stat-card"><div class="stat-number">5</div><div class="stat-label">Continents</div></div><div class="stat-card"><div class="stat-number">${allRecords().length}</div><div class="stat-label">Indexed Records</div></div><div class="stat-card"><div class="stat-number">2.0628B</div><div class="stat-label">Modeled Residents</div></div></div>
       <div class="card-panel archive-banner"><div><div class="eyebrow">THE COMPLETE SOURCE ARCHIVE</div><h2 class="minor-title">54 original World Bible and Compendium volumes</h2><p>Browse the complete preserved chapters, older and newer, with no abbreviated replacements.</p></div><a class="btn btn-primary" href="./vault.html">Read all volumes ↗</a></div>
       ${sectionHead('From the World Bible','#library')}
       <div class="record-grid">${highlighted.map(recordCard).join('')}</div>
       ${sectionHead('The world at a glance')}
-      <div class="overview-grid"><div class="card-panel"><div class="eyebrow">THE HISTORICAL RECORD</div><h3 class="minor-title" style="margin-top:14px">Five Ages. Countless histories.</h3><p>The First Age is undocumented. The Second Age spans exactly 1,437 years, divided into three established <em>Avarran</em> eras. The proposed Third Age spans 8,873 years. Present-day history belongs to the Fifth Age and the Era of Crowns.</p><div class="era-bar"><div></div><div></div><div></div></div><div class="era-labels"><span>AWAKENING</span><span>WONDER</span><span>FIRE</span></div><div style="margin-top:22px"><a class="btn btn-small btn-quiet" href="#history">Explore the Ages ↗</a></div></div>
-      <div class="card-panel panel-highlight"><div class="eyebrow">CAMPAIGN · PAUSED</div><div class="scene-time">Autumn Day 22 · 11:25 AM</div><div class="scene-summary">Gloin and Maela stand before Hadrik Ironvein at the Royal Historical Archive.</div><p>Hadrik has asked what they uncovered. Gloin has not answered. No decisions, revelations or in-world time are added while worldbuilding continues.</p><a class="btn btn-small btn-quiet" href="#campaign">Open Campaign Ledger ↗</a></div></div>
+      <div class="overview-grid"><div class="card-panel"><div class="eyebrow">THE HISTORICAL RECORD</div><h3 class="minor-title" style="margin-top:14px">Five Ages. Countless histories.</h3><p>The First Age is documented by some peoples, while the Khazari lost much of their early record. The Second Age spans exactly 1,437 years, divided into three established <em>Avarran</em> eras. The proposed Third Age spans 8,873 years. Present-day history belongs to the Fifth Age and the Era of Crowns.</p><div class="era-bar"><div></div><div></div><div></div></div><div class="era-labels"><span>AWAKENING</span><span>WONDER</span><span>FIRE</span></div><div style="margin-top:22px"><a class="btn btn-small btn-quiet" href="#history">Explore the Ages ↗</a></div></div>
+      <div class="card-panel panel-highlight"><div class="eyebrow">CREATIVE DIRECTION · OPEN WORLDBUILDING</div><div class="scene-time">No predetermined player character</div><div class="scene-summary">Eryndor continues through its peoples, cultures, histories, and ordinary lives.</div><p>Gloin Hammerfeld and his family remain inhabitants. Former gameplay is archived, not an active scene. Future fiction may follow many different perspectives.</p><a class="btn btn-small btn-quiet" href="${hrefRecord('eryndor-passion-project-and-open-storytelling')}">Read the creative charter ↗</a></div></div>
       ${sectionHead('Keep the mystery intact','#continuity')}
       <div class="card-panel"><div class="eyebrow">CONTINUITY ETHIC</div><h3 class="minor-title" style="margin-top:12px">Not every unanswered question needs an answer.</h3><p>Gloin's possible First Throne ancestry is genuinely undecided. The Silence Below, vanished records and the dark mages' ultimate fate remain open. Historical reports are not automatic facts. Approved worldbuilding stays revisable when the creator explicitly changes it.</p><div class="meta-strip">${statusChip('canon')} ${statusChip('working')} ${statusChip('reported')} ${statusChip('open')} ${statusChip('disputed')}</div></div>
-      ${notice(`<strong>Complete archive:</strong> All 54 available Notion World Bible, Compendium, Atlas and Second Age source pages are preserved verbatim in the <a href="./vault.html">Complete Source Vault</a>. ${esc(m.notice)} This GitHub Pages site is public to read; only authorized repository contributors can publish changes.`)}`;
+      ${notice(`<strong>Complete archive:</strong> All 54 available Notion World Bible, Compendium, Atlas and Second Age source pages are preserved verbatim in the <a href="./vault.html">Complete Source Vault</a>. ${esc(m.notice)} Public access depends on repository visibility and GitHub Pages publication settings; editing published files still requires repository write permission.`)}`;
   }
   function renderLibrary() {
     const categories = ['All',...SHELVES];
@@ -244,19 +244,17 @@
       ${notice('These figures are overlapping *domain or metropolitan planning envelopes*, not seven fully surveyed city-core censuses. Seven-Throne residents are already counted inside the 144-million global Khazari total.')}`;
   }
   function renderCampaign() {
-    const c=base.meta.campaign;
     const days=['autumn-day-19-opening-and-borin','autumn-day-20-quarry-and-research','autumn-day-21-family-supper','autumn-day-22-mine-inspection'].map(byId).filter(Boolean);
-    const important=['gloin-hammerfeld','maela-deepforge','borin-ashmantle','hadrik-ironvein','elska-hammerfeld','bruni-hammerfeld'].map(byId).filter(Boolean);
-    return `${heading('THE ACTIVE CHRONICLE','Gloin Hammerfeld','The campaign is paused. This reference records what happened—not what is guaranteed to happen next.')}
-      <div class="hero" style="min-height:290px"><div class="hero-art" style="opacity:.3"></div><div class="hero-content"><div class="eyebrow">LAST VERIFIED MOMENT · DO NOT ADVANCE</div><h2 class="display-title" style="font-size:clamp(32px,4.2vw,47px)">${esc(c.date)}</h2><div class="scene-time">${esc(c.time)} · ${esc(c.place)}</div><p class="scene-summary">${esc(c.state)}</p><div class="meta-strip"><span>GLOIN · AGE ${c.age}</span><span>FUNDS · ${esc(c.money)}</span></div></div></div>
-      <div class="stats-grid"><div class="stat-card"><div class="stat-number">42</div><div class="stat-label">Gloin's age</div></div><div class="stat-card"><div class="stat-number">Day 22</div><div class="stat-label">Current scene</div></div><div class="stat-card"><div class="stat-number">10s 82c</div><div class="stat-label">Last confirmed purse</div></div><div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Predetermined heirs</div></div></div>
-      ${sectionHead('The campaign so far')}
-      <div class="chapter-grid">${days.map((r,i)=>`<a class="chapter" href="${hrefRecord(r.id)}"><span class="chapter-index">${String(i+19).padStart(2,'0')}</span><div><h3>${esc(r.title.replace(/Autumn Day \d+ — /,''))}</h3><p>${esc(r.summary)}</p></div></a>`).join('')}</div>
-      ${sectionHead('Known commitments and boundaries')}
-      <div class="overview-grid"><div class="card-panel"><div class="eyebrow">NEXT INTENDED APPOINTMENTS</div><h3 class="minor-title" style="margin-top:12px">Training and research</h3><p>Maela: provisional runesmith apprenticeship twice weekly as schedules allow. Keldrun: civilian combat course, next planned Day 23 morning (time unconfirmed). Bruni: metallurgy lesson Day 23 at 11:30 AM. Elska: discreet ambient-magic research not yet begun.</p></div><div class="card-panel"><div class="eyebrow">WHO KNOWS WHAT</div><h3 class="minor-title" style="margin-top:12px">Knowledge must be earned</h3><p>Maela knows the recent inspection and workshop experiments. Hadrik has not yet heard detailed Day 22 findings. Family members know what Gloin disclosed at supper. No character can infer the First Throne secret or an alleged breach merely because the website contains a theory.</p></div></div>
-      ${sectionHead('Key people','#library?category=People%20%26%20NPCs')}
-      <div class="record-grid">${important.map(recordCard).join('')}</div>
-      ${notice('Gloin’s possible First Throne ancestry remains genuinely undecided. Continue only through the player’s next choice; no implied plot progress is created by editing this site.')}`;
+    const family=['gloin-hammerfeld','durgan-hammerfeld','mara-hammerfeld','bruni-hammerfeld','tovin-hammerfeld','elska-hammerfeld','rurik-coppervein','harn-coppervein','vessa-coppervein'].map(byId).filter(Boolean);
+    return `${heading('RETIRED INTERACTIVE CHRONICLE','Gloin — Former Roleplay Archive','These former Day 19–22 events are preserved as non-canonical reference material, not an ongoing campaign.')}
+      ${notice('<strong>No active campaign or player character:</strong> Eryndor is a persistent fantasy worldbuilding project with possible future novels. Gloin and his family remain inhabitants, but the archived scene, old inventories, and appointments are not current events.')}
+      <div class="overview-grid"><div class="card-panel"><div class="eyebrow">THE ARCHIVED CHRONICLE</div><h3 class="minor-title" style="margin-top:12px">Former Autumn Day 19–22 material</h3><p>Original Gloin scenes remain accessible for historical comparison. Their outcomes are not automatically accepted as canonical world events.</p></div>
+      <div class="card-panel panel-highlight"><div class="eyebrow">CURRENT CREATIVE DIRECTION</div><h3 class="minor-title" style="margin-top:12px">An independent living world</h3><p>There is no designated protagonist. Eryndor's communities, histories and individuals continue beyond any one person's story.</p><a class="btn btn-small btn-quiet" href="${hrefRecord('eryndor-passion-project-and-open-storytelling')}">Read creative charter ↗</a></div></div>
+      ${sectionHead('Retired campaign records')}
+      <div class="chapter-grid">${days.map((r,i)=>`<a class="chapter" href="${hrefRecord(r.id)}"><span class="chapter-index">${String(i+19).padStart(2,'0')}</span><div><h3>${esc(r.title.replace(/Autumn Day \\d+ — /,''))}</h3><p>${esc(r.summary)}</p></div></a>`).join('')}</div>
+      ${sectionHead('Gloin and the Hammerfeld family','#library?category=People%20%26%20NPCs')}
+      <div class="record-grid">${family.map(recordCard).join('')}</div>
+      ${notice('The Hammerfeld family remains part of Eryndor, without a preselected hero. Gloin’s possible First Throne ancestry is genuinely undecided; no future interactive role or book protagonist has been chosen.')}`;
   }
   function renderContinuity() {
     const c=base.meta.continuity;
@@ -304,7 +302,7 @@
   }
   function updateNav(route) {
     document.querySelectorAll('[data-route]').forEach(a=>a.classList.toggle('active',a.dataset.route===route));
-    const labels={home:'THE GREAT ARCHIVE',library:'ENCYCLOPEDIA',history:'THE BOOK OF AGES',world:'THE WORLD ATLAS',campaign:'GLOIN HAMMERFELD',continuity:'CANON & CONTINUITY',drafts:'THE SCRIBE’S DESK',sources:'THE COMPLETE SOURCE ARCHIVE',source:'ORIGINAL VOLUME',record:'COMPENDIUM ENTRY'};
+    const labels={home:'THE GREAT ARCHIVE',library:'ENCYCLOPEDIA',history:'THE BOOK OF AGES',world:'THE WORLD ATLAS',campaign:'FORMER ROLEPLAY ARCHIVE',continuity:'CANON & CONTINUITY',drafts:'THE SCRIBE’S DESK',sources:'THE COMPLETE SOURCE ARCHIVE',source:'ORIGINAL VOLUME',record:'COMPENDIUM ENTRY'};
     document.getElementById('locationLabel').textContent=labels[route]||'THE GREAT ARCHIVE';
     document.getElementById('navCount').textContent=allRecords().length;
     document.getElementById('draftCount').textContent=Object.keys(edits).length||'';
