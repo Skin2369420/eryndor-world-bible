@@ -1,4 +1,4 @@
-/* Eryndor Complete Source Vault: full-text preservation, reader and searching. No dependencies. */
+/* Orakana Complete Source Vault: full-text preservation, reader and searching. No dependencies. */
 (()=>{
   'use strict';
   const manifestUrl='./data/source-vault-index.json';
@@ -33,7 +33,7 @@
     return doc;
   }
   async function fetchDoc(item){
-    if(!item)throw new Error('Unknown Eryndor source');
+    if(!item)throw new Error('Unknown Orakana source');
     if(cache.has(item.id))return cache.get(item.id);
     const promise=fetch(item.path,{cache:'no-cache'}).then(async response=>{
       if(!response.ok)throw new Error('Unable to load '+item.title+' (HTTP '+response.status+')');
@@ -67,7 +67,7 @@
       <div class="vault-source-callout">${esc(manifest.notice)} The source documents are maintained as original historical records; they are not all equally authoritative. The curated <a href="./index.html#library">Encyclopedia</a> remains the working index of accepted canon.</div>
       <div class="vault-doc-actions"><button id="vaultSearchAll" class="vault-btn primary" ${searchBusy?'disabled':''}>⌕ Search inside all ${manifest.sources.length} complete documents</button><span style="font-size:12px;color:#a6b3b6">Enter a phrase in the left search field first</span></div>
       <div class="vault-source-list">${filtered.map(item=>`<a class="vault-source-card" href="${sourceHref(item.id)}"><small>${esc(item.group)}</small><strong>${esc(item.title)}</strong><p>${formatSize(item.bytes)} · ${esc(item.authority)}</p></a>`).join('')||'<p>No matching documents.</p>'}</div></div>`;
-    document.title='Complete Source Vault · Eryndor';
+    document.title='Complete Source Vault · Orakana';
   }
   function cleanNotion(text){
     return String(text)
@@ -135,7 +135,7 @@
         </div>
         <div class="vault-source-callout">This volume reproduces the preserved source text. Its original markup is available using “Exact original markup.” Older source versions may contain superseded facts, and gaps in original conversations remain explicitly unresolved.</div>
         ${contents}</article>`;
-      document.title=item.title+' · Eryndor Archive';
+      document.title=item.title+' · Orakana Archive';
     }catch(error){mainEl.innerHTML=`<div class="vault-blank">${esc(error.message)}<p><a href="#">Return to the source list.</a></p></div>`;}
   }
   async function runFullSearch(){
