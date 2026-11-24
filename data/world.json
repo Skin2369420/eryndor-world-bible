@@ -511,7 +511,13 @@
       "confirmedOn": "2026-11-23",
       "changeNote": "Creator formally chose Orakana as the new official name of the fantasy world. 'Eryndor' was the former development/project name and is NOT an in-universe old name, historical political renaming, or independent world unless later expressly decided.",
       "archivalRule": "Retain original Eryndor-titled Notion source files, their provenance and archive indexes unchanged; all new canonical worldbuilding and public-facing site branding should use Orakana.",
-      "technicalContinuity": "Do not rename pre-existing stable record IDs, localStorage keys, repository path or original source file names automatically; these are technical identifiers, not current canon names."
+      "technicalContinuity": "Do not rename pre-existing stable record IDs, localStorage keys, repository path or original source file names automatically; these are technical identifiers, not current canon names.",
+      "malevolentName": "Malenkor",
+      "malevolentNameStatus": "canon (creator established 2026-11-23)",
+      "malevolentNameMeaning": "Not yet established",
+      "malevolentNameUsage": "Used by genuinely malevolent beings; which specific beings, traditions, or eras use it remains open",
+      "malevolentNameContinuity": "Malenkor and Orakana refer to the SAME planet. Not a universal designation for all villains, and not an additional world.",
+      "malevolentNameNote": "CREATOR CANON (2026-11-23): MALENKOR is an alternative name for the planet Orakana used by genuinely malevolent beings in this setting. Orakana remains the official world/project name; Malenkor does NOT designate a second planet. The exact language, origin, etymology, translation, first speakers, frequency and range of users remain UNDECIDED. Do not assume that every evil being belongs to a unified faction or uses this term. Nor does ordinary political opposition or cultural difference automatically imply moral evil. The existence of genuinely awful/evil beings is an intentional setting direction; particular beings and deeds must be established separately."
     }
   },
   "records": [
@@ -520,7 +526,7 @@
       "category": "Foundations",
       "title": "Orakana — Planetary Fundamentals",
       "summary": "A five-continent, magically alive world, approximately 50,000 km in diameter.",
-      "body": "Orakana is approximately 50,000 km in diameter and 157,080 km around. Its surface is 60% water and 40% land. A 24-hour day, 360-day year, and four roughly 90-day seasons govern the working calendar.\n\nThe older 13,400-km diameter, 42,000-km circumference and 71%-water model are superseded.\n\nEveryday gravity, hydrology, weather, agriculture and biology behave as on Earth, by explicit creator decision. The world is magical; no further physical justification for familiar gravity is required unless the creator later requests one.\n\nCREATOR WORLD-NAMING DECISION (2026-11-23): This planet and wider fantasy setting are officially named ORAKANA (former out-of-world development name: Eryndor). No planet geography, physical parameters or in-world civilization is modified by this naming choice.",
+      "body": "Orakana is approximately 50,000 km in diameter and 157,080 km around. Its surface is 60% water and 40% land. A 24-hour day, 360-day year, and four roughly 90-day seasons govern the working calendar.\n\nThe older 13,400-km diameter, 42,000-km circumference and 71%-water model are superseded.\n\nEveryday gravity, hydrology, weather, agriculture and biology behave as on Earth, by explicit creator decision. The world is magical; no further physical justification for familiar gravity is required unless the creator later requests one.\n\nCREATOR WORLD-NAMING DECISION (2026-11-23): This planet and wider fantasy setting are officially named ORAKANA (former out-of-world development name: Eryndor). No planet geography, physical parameters or in-world civilization is modified by this naming choice.\n\nMALEVOLENT ALTERNATIVE NAME — MALENKOR (CREATOR CANON, 2026-11-23): Some genuinely malevolent beings refer to this SAME PLANET as 'Malenkor'. Its official world/project name remains 'Orakana'. We have not decided the name's linguistic origin, meaning, why those beings use it, or which evil beings or groups know it. Do not presume all evil individuals share one belief system or universally use the same term.",
       "status": "canon",
       "era": "All Ages",
       "region": "World",
@@ -3215,6 +3221,30 @@
         "first-age"
       ],
       "source": "Creator's Eryndor conversation on 2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "malenkor-malevolent-name-for-orakana",
+      "category": "Foundations",
+      "title": "Malenkor — Malevolent Name for Orakana",
+      "summary": "Malenkor is a name used by genuinely malevolent beings for the planet Orakana; its origin, meaning, and users remain unresolved.",
+      "body": "CREATOR CANON (2026-11-23): MALENKOR is an alternative name for the planet Orakana used by genuinely malevolent beings in this setting. Orakana remains the official world/project name; Malenkor does NOT designate a second planet. The exact language, origin, etymology, translation, first speakers, frequency and range of users remain UNDECIDED. Do not assume that every evil being belongs to a unified faction or uses this term. Nor does ordinary political opposition or cultural difference automatically imply moral evil. The existence of genuinely awful/evil beings is an intentional setting direction; particular beings and deeds must be established separately.\n\nThis is a CREATOR-SELECTED NAME, not a newly established faction, deity, realm, location, or second planet. Stories may eventually reveal contrasting ways various beings name or view the world, but those specifics are not yet canon.",
+      "status": "canon",
+      "era": "All Ages",
+      "region": "Orakana (planet-wide term; extent of use not established)",
+      "tags": [
+        "world naming",
+        "Malenkor",
+        "Orakana",
+        "malevolent beings",
+        "language",
+        "open lore"
+      ],
+      "related": [
+        "eryndor-planetary-fundamentals",
+        "world-tone-and-creative-rules"
+      ],
+      "source": "Creator's explicit naming decision, 2026-11-23",
       "updated": "2026-11-23"
     }
   ]
