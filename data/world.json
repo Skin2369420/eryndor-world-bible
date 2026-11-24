@@ -546,6 +546,22 @@
       "otherContinentalBiomes": "Unaffected; do not treat all Avarra as forest",
       "lore": "CREATOR GEOGRAPHIC SCALE DECISION (2026-11-23): Letharion is an IMMENSE, ancient, continent-defining forest extending over a SIGNIFICANT portion of western Avarra, occupying a scale BETWEEN (B) an enormous continent-spanning forest and (C) a truly colossal forest of scarcely explored regions. It includes major settled Eldar territories as well as tremendous ancient wildernesses, remote regions and areas poorly known even to Eldar civilizations. This is NOT a declaration that the entire continent is covered in forest, that all remote lands are uninhabited, or that civilizations have failed to explore their immediate territories. Exact area, dimensions, forest boundaries, proportion of Avarra occupied, ranges/biomes, routes and settlements remain open. The Royal Eldar kingdom occupying about ONE-FIFTH of Letharion prior to the First Age Unification War remains canon; exact distribution of the remainder is undecided.",
       "continuityFlag": "CONTINUITY CHECK — ELDAR KINGDOM COUNT (OPEN, 2026-11-23): Earlier canon states EXACTLY THREE independent Eldar kingdoms within Letharion (two large, one small), but the subsequently established Ley Mother Clan expanded beyond its original settlement and founded its OWN kingdom. Do NOT silently increase the three-kingdom count, delete a kingdom, identify the Ley Mother kingdom with the existing unnamed smaller kingdom, or assert the two counts describe the same date. Need creator clarification about which era the three-kingdom count refers to, when/where the Ley Mother kingdom was founded, and whether it is situated within that count's geographical scope."
+    },
+    "scatteredIndependentEldarForests": {
+      "status": "canon (map annotation and planned forest count)",
+      "established": "2026-11-23",
+      "mapLabel": "Scattered Independent Eldar Realms",
+      "positionOnSketch": "Lower section of the creator's new Avarra hand-drawn map",
+      "forestCount": {
+        "min": 4,
+        "max": 5,
+        "exact": "undecided"
+      },
+      "forests": "Distinct forests, not one continuous forest",
+      "polityStructure": "Independent Eldar realms indicated, not yet fully enumerated or governed",
+      "relationshipToLetharion": "Unresolved: do not overwrite Letharion's separate historical three-kingdom count or assume these join the six alliances",
+      "mapEra": "Undecided",
+      "details": "CREATOR MAP CLARIFICATION (2026-11-23): The handwritten label in the LOWER PART of the creator's NEW AVARRA MAP reads exactly 'Scattered Independent Eldar Realms'. This labeled zone will include FOUR OR FIVE DISTINCT FORESTS, not one single continuous forest. The exact number is not yet chosen (4–5), and the forests' names, shapes, extent, settlements, political entities, boundaries, history, and whether every forest contains an Eldar realm remain open. Preserve 'Scattered Independent Eldar Realms' as the mapped label; do not silently replace it with a single unified kingdom or fold these lands into the six established Woodland Eldar alliances. This also does NOT automatically change or contradict the separate three-kingdom count established specifically for Letharion Forest; chronological and territorial relationships are still to be developed. The map's specific in-world date or era has not yet been established."
     }
   },
   "records": [
@@ -925,7 +941,7 @@
       "category": "Places",
       "title": "Avarra",
       "summary": "Principal campaign continent.",
-      "body": "Principal campaign continent. Ancient Ironspine ring, Seven Thrones, Veiled Inland Sea, Letharion, Aldermere, Valtoria, far-western uplift and southeastern Southern Wastes.",
+      "body": "Principal campaign continent. Ancient Ironspine ring, Seven Thrones, Veiled Inland Sea, Letharion, Aldermere, Valtoria, far-western uplift and southeastern Southern Wastes.\n\nCREATOR MAP CLARIFICATION (2026-11-23): The handwritten label in the LOWER PART of the creator's NEW AVARRA MAP reads exactly 'Scattered Independent Eldar Realms'. This labeled zone will include FOUR OR FIVE DISTINCT FORESTS, not one single continuous forest. The exact number is not yet chosen (4–5), and the forests' names, shapes, extent, settlements, political entities, boundaries, history, and whether every forest contains an Eldar realm remain open. Preserve 'Scattered Independent Eldar Realms' as the mapped label; do not silently replace it with a single unified kingdom or fold these lands into the six established Woodland Eldar alliances. This also does NOT automatically change or contradict the separate three-kingdom count established specifically for Letharion Forest; chronological and territorial relationships are still to be developed. The map's specific in-world date or era has not yet been established.",
       "status": "canon",
       "era": "All Ages",
       "region": "Avarra",
@@ -935,7 +951,7 @@
       ],
       "related": [],
       "source": "Eryndor Edition II / consolidated canon",
-      "updated": "2026-11-21"
+      "updated": "2026-11-23"
     },
     {
       "id": "tharvorn",
@@ -3273,6 +3289,31 @@
         "world-tone-and-creative-rules"
       ],
       "source": "Creator's explicit naming decision, 2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "avarra-scattered-independent-eldar-forests",
+      "category": "Places",
+      "title": "Scattered Independent Eldar Realms — Four or Five Forests",
+      "summary": "On the new hand-drawn Avarra map, the region labelled 'Scattered Independent Eldar Realms' comprises four or five separate forests; individual realms and forest names remain undecided.",
+      "body": "CREATOR MAP CLARIFICATION (2026-11-23): The handwritten label in the LOWER PART of the creator's NEW AVARRA MAP reads exactly 'Scattered Independent Eldar Realms'. This labeled zone will include FOUR OR FIVE DISTINCT FORESTS, not one single continuous forest. The exact number is not yet chosen (4–5), and the forests' names, shapes, extent, settlements, political entities, boundaries, history, and whether every forest contains an Eldar realm remain open. Preserve 'Scattered Independent Eldar Realms' as the mapped label; do not silently replace it with a single unified kingdom or fold these lands into the six established Woodland Eldar alliances. This also does NOT automatically change or contradict the separate three-kingdom count established specifically for Letharion Forest; chronological and territorial relationships are still to be developed. The map's specific in-world date or era has not yet been established.",
+      "status": "canon",
+      "era": "Undecided (map's in-world time not yet confirmed)",
+      "region": "Avarra — lower portion of creator's map; exact compass positioning open",
+      "tags": [
+        "Avarra",
+        "Eldar",
+        "map",
+        "forest",
+        "independent realms",
+        "open geography"
+      ],
+      "related": [
+        "avarra",
+        "letharion",
+        "eldar"
+      ],
+      "source": "Creator's hand-drawn Avarra map and explicit label clarification, 2026-11-23",
       "updated": "2026-11-23"
     }
   ]
