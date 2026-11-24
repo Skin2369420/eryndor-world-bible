@@ -1,17 +1,19 @@
-# Eryndor — The Living World Bible & Complete Source Vault
+# Orakana — The Living World Bible & Complete Source Vault
 
-A zero-dependency, phone-friendly GitHub Pages reader for the Eryndor fantasy world. The repository may be public even when GitHub Pages is unpublished; only the owner and authorized collaborators can commit updates.
+A zero-dependency, phone-friendly GitHub Pages reader for the Orakana fantasy world. The repository may be public even when GitHub Pages is unpublished; only the owner and authorized collaborators can commit updates.
 
 
 ## CURRENT PROJECT DIRECTION — 2026-11-23
 
-Eryndor is the creator's long-term **persistent worldbuilding passion project**, potentially the foundation for a future novel or multi-book series. The setting does not revolve around a predetermined player character or central protagonist. **Gloin Hammerfeld and his family remain canonical people in the world**, with their histories and potential stories open to future authorship. Previous interactive Day 19–22 gameplay is preserved as explicitly non-canon reference material; it is **not** an active paused campaign.
+Orakana is the creator's long-term **persistent worldbuilding passion project**, potentially the foundation for a future novel or multi-book series. The setting does not revolve around a predetermined player character or central protagonist. **Gloin Hammerfeld and his family remain canonical people in the world**, with their histories and potential stories open to future authorship. Previous interactive Day 19–22 gameplay is preserved as explicitly non-canon reference material; it is **not** an active paused campaign.
 
 The World Bible, Compendium and archives remain available through the connected GitHub repository. Making the repository private and unpublishing GitHub Pages are separate visibility controls. This update does not enable or republish the site.
 
+**Official name (2026-11-23): ORAKANA.** The former creative-project/world name was **Eryndor**. This is an out-of-world name change: the continents, histories, characters, and established lore continue without any reset. Historical sources retain their original Eryndor-titled names, and their archival files are untouched. The GitHub repository slug remains `eryndor-world-bible` for link stability unless deliberately renamed in a separate operation.
+
 ## FULL SOURCE IMPORT — 2026-11-21
 
-**All 54 Eryndor source pages discoverable in the connected Notion workspace are archived in full**, totaling 2,118,797 bytes. They include the original World Bible, the original Compendium, Edition II and its chapter sources, Living Atlases, cultural chapters, population registers, the complete recovered Gloin chronicles and Second Age annals. **This is not a summary-only import.**
+**All 54 legacy Eryndor source pages discoverable in the connected Notion workspace are archived in full**, totaling 2,118,797 bytes. They include the original World Bible, the original Compendium, Edition II and its chapter sources, Living Atlases, cultural chapters, population registers, the complete recovered Gloin chronicles and Second Age annals. **This is not a summary-only import.**
 
 - **Website reader:** [Complete Source Vault](./vault.html) — browse source collections, read the complete text, switch to exact original markup, or full-text-search all source pages.
 - **Full provenance checklist:** [SOURCE-INVENTORY.md](./SOURCE-INVENTORY.md) — all 54 page titles and direct GitHub source links.
@@ -40,7 +42,7 @@ A custom domain is optional. There is no hosting fee for a public GitHub Pages r
 
 ## Important data rules
 
-This is a condensed first import of prior Eryndor canon, not a claim that all legacy Compendium material has been copied verbatim or exhaustively reconciled. The original Sites website and any Notion copies are **not touched**. Their export and source-accurate dialogue can be merged carefully in later commits.
+This is a condensed first import of the world previously developed under the name Eryndor, not a claim that all legacy Compendium material has been copied verbatim or exhaustively reconciled. The original Sites website and any Notion copies are **not touched**. Their export and source-accurate dialogue can be merged carefully in later commits.
 
 Canon classifications:
 - `canon` — established and currently accepted
@@ -51,7 +53,7 @@ Canon classifications:
 - `superseded` — prior archived state no longer current
 - `noncanon` — rejected or excluded idea
 
-**Protected canon constraints:** Eryndor has a 50,000-km diameter and 60/40 water/land; Second Age is exactly 1,437 years and Avarran eras are Awakening/Wonder/Fire; Orcs are absent from Ages One and Two and created by southeastern Avarran dark mages in the Third Age; First Throne ancestry is genuinely undecided; no character is designated as a player character or required protagonist. Gloin Hammerfeld and his family remain established inhabitants, while the old Day 19–22 gameplay is noncanonical archive material.
+**Protected canon constraints:** Orakana has a 50,000-km diameter and 60/40 water/land; Second Age is exactly 1,437 years and Avarran eras are Awakening/Wonder/Fire; Orcs are absent from Ages One and Two and created by southeastern Avarran dark mages in the Third Age; First Throne ancestry is genuinely undecided; no character is designated as a player character or required protagonist. Gloin Hammerfeld and his family remain established inhabitants, while the old Day 19–22 gameplay is noncanonical archive material.
 
 ## Editing without a server
 
