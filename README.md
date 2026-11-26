@@ -3,6 +3,10 @@
 A zero-dependency, phone-friendly GitHub Pages reader for the Orakana fantasy world. The repository may be public even when GitHub Pages is unpublished; only the owner and authorized collaborators can commit updates.
 
 
+## OFFICIAL ORAKANA ANNIVERSARY
+
+**November 26**, annually. Officially designated on **November 26, 2026** by the creator as a real-world milestone celebrating Orakana's creation and continuing development. This commemorative date does not replace earlier project history, including the prior Eryndor development and November 23 naming decision. It is not an in-world historical date. An annual review of creative progress and future goals is an optional tradition.
+
 ## CURRENT PROJECT DIRECTION — 2026-11-23
 
 Orakana is the creator's long-term **persistent worldbuilding passion project**, potentially the foundation for a future novel or multi-book series. The setting does not revolve around a predetermined player character or central protagonist. **Gloin Hammerfeld and his family remain canonical people in the world**, with their histories and potential stories open to future authorship. Previous interactive Day 19–22 gameplay is preserved as explicitly non-canon reference material; it is **not** an active paused campaign.
