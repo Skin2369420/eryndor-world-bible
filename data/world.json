@@ -3548,6 +3548,73 @@
       ],
       "source": "Creator's six unique being concepts and clarification, 2026-11-25",
       "updated": "2026-11-25"
+    },
+    {
+      "id": "objects-of-power-development",
+      "category": "Magic",
+      "title": "Objects of Power — Developing Concept",
+      "summary": "Extraordinary objects, from humble tools to weapons that grant access or right to power without necessarily granting rulership.",
+      "body": "APPROVED FOUNDATION (2026-11-25; development ongoing): Multiple extraordinary objects may exist across Orakana. They are not restricted to weapons, royal heirlooms, war or kingship. A weapon may confer upon its wielder the right to wield a particular power, without necessarily granting political authority. The creator explicitly envisages a shovel that makes soil more fertile and an axe that fells a tree in a single swing. Extraordinary objects may therefore have humble, practical, everyday uses as well as legendary significance.\n\nOPEN DEVELOPMENT: Origins, creation methods, rarity, permanence, limits, conditions of use, whether they recognize or select bearers, and the distinction from ordinary enchanted objects remain undecided. Suggested smithing hammers, lanterns, drinking horns, needles and compasses are examples for discussion only, not established individual artifacts. No names, dates, owners or locations have been fixed.",
+      "tags": [
+        "objects of power",
+        "artifacts",
+        "enchantment",
+        "development"
+      ],
+      "related": [
+        "everyday-practical-magic",
+        "natural-magic-the-worlds-breath"
+      ],
+      "status": "working",
+      "era": "Undecided",
+      "region": "Undecided",
+      "source": "Creator-approved developing concepts, 2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
+      "id": "animal-communication-magic-development",
+      "category": "Magic",
+      "title": "Animal Communication Magic — Developing Concept",
+      "summary": "A magical discipline enabling communication with ordinary animals without changing their natural intelligence, instincts or free will.",
+      "body": "APPROVED FOUNDATION (2026-11-25; development ongoing): People can learn magic enabling communication with ordinary animals, distinct from sapient animal peoples. Animals retain their natural intelligence, instincts and free will; communication does not inherently grant control or humanlike reasoning. An animal may report observations according to its own understanding.\n\nApproved progression: novices sense emotions, distress and intentions; apprentices communicate simple thoughts and requests; adepts hold meaningful exchanges; masters communicate across numerous species with remarkable clarity; legendary practitioners establish exceptionally deep connections with the natural world. These are descriptive stages rather than fixed in-world rank names.\n\nOPEN DEVELOPMENT: Origins, rarity, magical classification, limitations, species differences, cultural traditions and precise mechanics. Possible practical uses among hunters, farmers, healers, scouts and sailors are avenues for development rather than established institutions.",
+      "tags": [
+        "animal communication",
+        "animals",
+        "magic",
+        "development"
+      ],
+      "related": [
+        "natural-magic-the-worlds-breath",
+        "everyday-practical-magic",
+        "second-age-animal-peoples-and-orc-absence"
+      ],
+      "status": "working",
+      "era": "Undecided",
+      "region": "Undecided",
+      "source": "Creator-approved developing concepts, 2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
+      "id": "independent-knightly-order-development",
+      "category": "Realms",
+      "title": "Independent Knightly Order Against Evil — Developing Concept",
+      "summary": "An independent order devoted to fighting evil, with specialized training and institutional inspiration from the Knights Templar and Hospitaller.",
+      "body": "APPROVED FOUNDATION (2026-11-25; development ongoing): An independent knightly order dedicated solely to fighting evil rather than serving a particular monarch or acting as conventional mercenaries. Its institutional inspiration is the historical Knights Templar and Knights Hospitaller, not a literal transplantation of either order. Members receive specialized training in combat, dark magical lore, supernatural creatures, curses, counter-magic, investigation and recognizing corruption. The order may maintain its own strongholds, libraries, training grounds and historical records of supernatural threats. Membership could span multiple peoples and kingdoms. Rulers may welcome, distrust or oppose its independence; members may disagree over what constitutes evil without abandoning its founding purpose.\n\nOPEN DEVELOPMENT: Name, founding age, founders, hierarchy, vows, recruitment, financing, religious or secular character, geographical reach, political status and precise mandate. Healers, scholars, mages, relief work, fortified monasteries and containment of dangerous relics are further possible details, not finalized canon. No link to any specific existing malevolent being or artifact is established.",
+      "tags": [
+        "knightly order",
+        "institutions",
+        "evil",
+        "development"
+      ],
+      "related": [
+        "inherently-good-grey-and-evil-magic",
+        "malevolent-beings-multiple-origins"
+      ],
+      "status": "working",
+      "era": "Undecided",
+      "region": "Undecided",
+      "source": "Creator-approved developing concepts, 2026-11-25",
+      "updated": "2026-11-25"
     }
   ]
 }
